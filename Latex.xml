@@ -1,0 +1,43 @@
+<templateSet group="Latex">
+  <template name="figure" value="\begin{figure}[h!]&#10;\centering&#10;\includegraphics[width=0.5\textwidth]{$fog$}&#10;\vspace{5pt}&#10;\caption{$caption$}&#10;&#10;\label{fig:$fog$}&#10;\end{figure}" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="fog" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="caption" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="false" />
+      <option name="Django" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="Python_Class" value="false" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="subfigure" value="\begin{figure}[ht]&#10;\centering&#10;\subfigure[Subfigure 1 title]{&#10;    \includegraphics[width=.6\linewidth, height=0.15\textheight]{$fig1$}&#10;    \label{fig:$fig1$}&#10;}&#10;\subfigure[Subfigure 2 title]{&#10;    \includegraphics[width=.6\linewidth, height=0.15\textheight]{$fig2$}&#10;\label{fig:$fig2$}&#10;}&#10;\caption[Optional caption for list of figures]{General Caption of subfigures 1-4}&#10;\label{fig:subfigureExample1}&#10;\end{figure}" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="fig1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="fig2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="false" />
+      <option name="Django" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="Python" value="false" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="fixed figure" value="%\usepackage{float}&#10;\begin{figure}[H]&#10;\centering&#10;\includegraphics[width=0.5\textwidth]{$fig1$}&#10;\vspace{5pt}&#10;\caption{}&#10;&#10;\label{fig:$fig1$}&#10;\end{figure}" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="fig1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="false" />
+      <option name="Django" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="Python" value="false" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+</templateSet>

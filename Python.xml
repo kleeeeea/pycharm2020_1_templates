@@ -1,0 +1,556 @@
+<templateSet group="Python">
+  <template name="__" value="__$init$__" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="init" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="argparse_with_string_and_boolean" value="import argparse &#10;&#10;&#10;argparser = argparse.ArgumentParser()&#10;argparser.add_argument('$positional_arg$', nargs='?', default='')&#10;argparser.add_argument('--$source_table_fullname$', default='')&#10;argparser.add_argument('--$use_toy_dataset$', action=&quot;store_true&quot;, default=False)&#10;$parser$, _ = argparser.parse_known_args()&#10;print($parser$)&#10;&#10;" description="argparse_with_string_and_boolean" toReformat="false" toShortenFQNames="true">
+    <variable name="positional_arg" expression="" defaultValue="&quot;optional_positional_arguments&quot;" alwaysStopAt="true" />
+    <variable name="source_table_fullname" expression="" defaultValue="&quot;string_arguments&quot;" alwaysStopAt="true" />
+    <variable name="use_toy_dataset" expression="" defaultValue="&quot;boolean_arguments&quot;" alwaysStopAt="true" />
+    <variable name="parser" expression="" defaultValue="&quot;argparser&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="args kwargs" value="*args, **kwargs" description="args_kwargs" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="class" value="class $class_name$($parent_class_modifier$):&#10;    $statement$" description="new class template" toReformat="false" toShortenFQNames="true">
+    <variable name="class_name" expression="" defaultValue="&quot;MyClass&quot;" alwaysStopAt="true" />
+    <variable name="statement" expression="" defaultValue="&quot;pass&quot;" alwaysStopAt="true" />
+    <variable name="parent_class_modifier" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="class_with_init" value="class $class_name$($parent_class_name$):&#10;    def __init__(self, $attribtue_to_set$, $example_argument$):&#10;        self.$attribtue_to_set$ = $attribtue_to_set$&#10;        super($class_name$, self).__init__(*args, **kwargs)&#10;" description="new class template" toReformat="false" toShortenFQNames="true">
+    <variable name="class_name" expression="" defaultValue="&quot;MyClass&quot;" alwaysStopAt="true" />
+    <variable name="parent_class_name" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true" />
+    <variable name="attribtue_to_set" expression="" defaultValue="&quot;attribute&quot;" alwaysStopAt="true" />
+    <variable name="example_argument" expression="" defaultValue="&quot;*args, **kwargs&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="DATADIRospathdirnamefilee" value="DATADIR = os.path.dirname(__file__) + '/$relative_data_diretory$'" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="relative_data_diretory" expression="" defaultValue="&quot;../data/&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="decorator" value="def $func$(orig_func):&#10;    @wraps(orig_func)&#10;    def wrapper(*args, **kwargs):&#10;        result = orig_func(*args, **kwargs)&#10;        $stmt$&#10;        return result&#10;&#10;    return wrapper" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="func" expression="" defaultValue="&quot;decorator&quot;" alwaysStopAt="true" />
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="decorator_def" value="@decorator&#10;def $var1$(f, *args, **kwargs):&#10;    result = f(*args, **kwargs)&#10;    return result" description="decorator_def" toReformat="false" toShortenFQNames="true">
+    <variable name="var1" expression="" defaultValue="function_decorator" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="def_simple" value="def $function$($param$):&#10;&#9;$statement$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="function" expression="" defaultValue="&quot;main&quot;" alwaysStopAt="true" />
+    <variable name="param" expression="" defaultValue="&quot;*args, **kwargs&quot;" alwaysStopAt="true" />
+    <variable name="statement" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="doctest_add" value="&quot;&quot;&quot;&#10;&gt;&gt;&gt; $v1$&#10;$v2$&#10;&quot;&quot;&quot;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="v1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="v2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="doctest_run" value="if __name__ == '__main__':&#10;    import doctest&#10;    doctest.testmod()&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for $i$ in $var$:&#10;&#9;$pass$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="i" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="pass" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="from_kleeeeea_helper_imports_light" value="from kleeeeea_helper.startup_imports.imports_light import *" description="from_kleeeeea_helper_imports_light_description" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="get_spark_session" value="from kleeeeea_helper.distributed_computation_spark import get_spark_session&#10;&#10;spark = get_spark_session()&#10;sc = spark.sparkContext&#10;" description="spark template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="getLogger" value="from core_util import getLogger&#10;&#10;logger = getLogger(__name__)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if $selction$:&#10;&#9;$pass$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="selction" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="pass" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if_elif" value="if $condiiton1$:&#10;&#9;$pass$&#10;elif $condiiton2$:&#10;    $pass2$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="condiiton1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="pass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="condiiton2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="pass2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if_else" value="if $selction$:&#10;&#9;$pass$&#10;else:&#10;    $pass2$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="selction" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="pass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="pass2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if_else_ternary_operator" value="$value1$ if $condition1$ else $value2$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="value1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="condition1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if_main_fire" value="if __name__ == '__main__':&#10;    import fire&#10;    fire.Fire()" description="if_main_fire" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if main" value="if __name__ == '__main__':&#10;    from pyramids.common.human_computer_interface.commandline_argument._application.run import convert__commandline_argument__to__args_kwargs___and___run&#10;    convert__commandline_argument__to__args_kwargs___and___run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
+    <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="json-dump" value="json.dump($object$, open($objectjson$, 'w'))" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="objectjson" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="json.load" value="$obj$ = json.load(open(&quot;$file$&quot;, 'r'))" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="file" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="open.readlines" value="$lines$ = [l.strip() for l in open($file$).readlines()]" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="lines" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="file" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="open.write" value="open($filetxt$, 'w').write($string$)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="filetxt" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="os.chdir(os.path.dirname(__file__))" value="import os&#10;os.chdir(os.path.dirname(__file__))&#10;&#10;&#10;" description="change to the parent directory of file" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="os.path.expandvars" value="os.path.expandvars(&quot;$HOME$&quot;)" description="os.path.expandvars" toReformat="false" toShortenFQNames="true">
+    <variable name="HOME" expression="" defaultValue="&quot;$HOME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="os.path.join" value="os.path.join($VAR1$, $VAR2$)&#10;" description="os.path.join" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="pdb" value="from pyramids.software_engineering.view_the_program.logging.text._interface.log import log_program&#10;log_program(f&quot;&quot;, do__append_variables=True)&#10;import platform; import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and not platform.system() == 'Darwin' and pdb.set_trace()" description="pdb" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="pickle-dump" value="import pickle&#10;pickle.dump($object$, open(&quot;$object$&quot;, 'wb'))" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="&quot;object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="pickle-load" value="import pickle&#10;$obj$ = pickle.load(open(&quot;$obj$&quot;, 'rb'))" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="pltsavefigpdf" value="plt.savefig('fig/$filename$.pdf')" description="plt.savefig('fig/2dplot.pdf')" toReformat="false" toShortenFQNames="true">
+    <variable name="filename" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="print_header_print" value="print('$sep$'*$repetition$)&#10;print($expression$)&#10;print(&quot;^^^ $expression$ ^^^&quot;)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="expression" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="sep" expression="0-" defaultValue="&quot;-&quot;" alwaysStopAt="true" />
+    <variable name="repetition" expression="23450" defaultValue="&quot;50&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="print_solution" value="print(Solution().$method$($param$))" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sc" value="&quot;&quot;&quot;&#10;Submit PySpark via command line,&#10;​&#10;Run at gateway:&#10;​&#10;```&#10;&#10;$submit_command$&#10;```&#10;​&#10;&quot;&quot;&quot;&#10;&#10;&#10;&#10;from pyspark.sql import SparkSession&#10;&#10;spark = SparkSession \&#10;    .builder \&#10;    .appName(&quot;Spark Application&quot;) \&#10;    .enableHiveSupport() \&#10;    .getOrCreate()&#10;&#10;sc = spark.sparkContext&#10;&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="submit_command" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="script_directory_path" value="import os&#10;script_directory_path = os.path.dirname(__file__)&#10;os.chdir(script_directory_path)&#10;" description="script_directory_path" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="self attribute equals attribute" value="self.$attribute$ = $attribute$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="attribute" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="todo" value="# TODO: " description="todo" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="try" value="try:&#10;    $stmt$&#10;except Exception as e:&#10;    log_with_logger(e)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="usrbinenvpython" value="#! /usr/bin/env python" description="usrbinenvpython" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="withdefault" value="$variable_name$ = with_default($variable_name$, $alternative_value$)" description="with_default template for writing the variable notation twice" toReformat="false" toShortenFQNames="true">
+    <variable name="variable_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="alternative_value" expression="" defaultValue="&quot;file_path_suggest()&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="f" value="f&quot;$msg${$expr$}&quot;" description="f string" toReformat="true" toShortenFQNames="true">
+    <variable name="expr" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="iflen_args_1_and_is_collection_args_0" value="# support passing arguments as one single arguments&#10;from kleeeeea_helper.common.data_structures_operations.aggregate_data_types._common.data_types._common import \&#10;        is_collection&#10;if len($args$) == 1 and is_collection ($args$[0]):&#10;    return $func$(*$args$[0], $arguments$)" description="iflen_args_1_and_is_collection_args_0" toReformat="true" toShortenFQNames="true">
+    <variable name="func" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="arguments" expression="" defaultValue="&quot;**kwargs&quot;" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="pseparator" value="print('$separator$'*$decorator_length$ + '$msg$'+'$separator$'*$decorator_length$)" description="print message" toReformat="true" toShortenFQNames="true">
+    <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="decorator_length" expression="" defaultValue="&quot;30&quot;" alwaysStopAt="true" />
+    <variable name="separator" expression="" defaultValue="&quot;=&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="p" value="print(&quot;********************************************************************************&quot;)&#10;print(f&quot;{$xx$}\n&quot;&#10;    &quot;^^^($xx$)^^^&quot;)&#10;print(&quot;********************************************************************************&quot;)   " description="" toReformat="true" toShortenFQNames="true">
+    <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="dataframe_filter" value="$dataframe$[&#10;            $dataframe$[$column$] $comparator$ $value$&#10;        ]" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="dataframe" expression="" defaultValue="df" alwaysStopAt="true" />
+    <variable name="column" expression="" defaultValue="col" alwaysStopAt="true" />
+    <variable name="comparator" expression="" defaultValue="&quot;&gt;&quot;" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="def" value="def $function$($param$):&#10;    $x$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="function" expression="" defaultValue="&quot;test&quot;" alwaysStopAt="true" />
+    <variable name="param" expression="" defaultValue="&quot;*_args, **_kwargs&quot;" alwaysStopAt="true" />
+    <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="pobj" value="print(object_to_string($xx$))&#10;print('$xx$')" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="p_sampled" value="sampled_number = NumberFactory.Float.create()&#10;if sampled_number &lt; log_ratio:&#10;    print(f&quot;{$xx$}\n&quot;&#10;    f&quot;($xx$)&quot;)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ipython_embed" value="from IPython import embed; embed()" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="uncomment" value="# uncomment " description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="pprint" value="from pprint import pprint&#10;pprint($o$)&#10;print('$o$')" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="o" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="p_double_quoted" value="print(f&quot;{$xx$}\n&quot;&#10;    f&quot;($xx$)&quot;)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="timeout" value="try:&#10;    with TimeoutContext($patience$):&#10;        $something_that_should_not_exceed_ten_seconds$&#10;except TimeoutError:&#10;    $pass$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="something_that_should_not_exceed_ten_seconds" expression="" defaultValue="&quot;pass&quot;" alwaysStopAt="true" />
+    <variable name="pass" expression="" defaultValue="&quot;pass&quot;" alwaysStopAt="true" />
+    <variable name="patience" expression="" defaultValue="&quot;10&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="get_args" value="inspect.getargvalues(inspect.currentframe())" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="argvalues" value="inspect.getargvalues(inspect.currentframe())" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="if is None equal" value="if $variable$ is None:&#10;    $variable$ = $value$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="&quot;&quot;val" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="is not None" value="is not None" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if is in remote interactive" value="if IS_IN_REMOTE_INTERACTIVE_ENVIRONMENT:&#10;        # don't limit by threshold&#10;        min_count_threshold = 0" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="hahaha_where_is_live_template" value="if IS_IN_REMOTE_INTERACTIVE_ENVIRONMENT:&#10;        # don't limit by threshold&#10;        min_count_threshold = 0" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="comment" value="##############################################&#10;##&#10;##      $msg$    &#10;##&#10;##############################################" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="log" value="from pyramids.software_engineering.view_the_program.logging.text._interface.log import log_program&#10;log_program($m1$$logger_option$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="logger_option" expression="" defaultValue="&quot;, logger=logger&quot;" alwaysStopAt="true" />
+    <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if is not None" value="if $xx$ is not None:&#10;    $stst$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="stst" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="imp" value="import torch&#10;import numpy as np&#10;from torch import tensor,nn" description="common library imports" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="print anything as string" value="print(&quot;&quot;&quot;&#10;$c$&#10;&quot;&quot;&quot;)" description="print anything as string" toReformat="true" toShortenFQNames="true">
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="spark equals get or create spark" value="from kleeeeea_helper.common.data_structures_operations.distributed_data_types.low_level.startup.spark_session._interface import \&#10;        get_or_create_spark&#10;    spark = get_or_create_spark()" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="for k v" value="for k, v in class2normalized_occurrences.items()" description="iterating dictionary" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python_Class" value="true" />
+    </context>
+  </template>
+  <template name="list_of_list transpose" value="zip(*$xx$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="comment2" value="######################################################################&#10;##&#10;##      $msg$    &#10;##&#10;######################################################################" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="recursion function decorator" value="from functools import lru_cache&#10;@lru_cache(maxsize=$100000000000$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="100000000000" expression="" defaultValue="&quot;100000000000&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="lsit map and/or filter" value="[$map_op$ for a in $list$ if $filter_op$]" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="list" expression="" defaultValue="&quot;list&quot;" alwaysStopAt="true" />
+    <variable name="map_op" expression="" defaultValue="a" alwaysStopAt="true" />
+    <variable name="filter_op" expression="" defaultValue="a" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="parent directory of this file" value="import os&#10;$parent_directory__of__this_file$ = os.path.dirname(__file__)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="parent_directory__of__this_file" expression="" defaultValue="&quot;parent_directory&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="local debugger" value="import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and pdb.set_trace()" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="debugger" value="from pyramids.software_engineering.view_the_program.logging.text._common._common import log_with_logger&#10;log_with_logger(f&quot;&quot;, do__append_variables=True)&#10;import platform; import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and not platform.system() == 'Darwin' and pdb.set_trace()" description="pdb" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="code folding regions" value="# $name_of_fold_region$&#10;if True:&#10;    $stmt$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="name_of_fold_region" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if True" value="if True:&#10;    $stmt$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if main run___method___with___args_kwargs__from__command_line" value="if __name__ == '__main__':&#10;    from pyramids.common.human_computer_interface.commandline_argument._application.run import convert__commandline_argument__to__args_kwargs___and___run&#10;    convert__commandline_argument__to__args_kwargs___and___run($main_preprocess___train_test___for__filtered_data$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="def main if main main" value="def main(*_args, **_kwargs):&#10;    $stmts$&#10;if __name__ == '__main__':&#10;    main()" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="stmts" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="exc" value="print(e)&#10;get__exeption_infomation()" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="excepti Exception and log" value="except Exception as e:&#10;    log_with_logger(e)" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="script directory" value="f&quot;{os.path.dirname(__file__)}/../&quot;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="is None" value="is None" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
