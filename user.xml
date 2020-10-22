@@ -10,7 +10,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="pdb simple minimal" value="import platform; import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and not platform.system() == 'Darwin' and pdb.set_trace()" toReformat="true" toShortenFQNames="true">
+  <template name="pdb simple minimal" value="import platform; import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and not platform.system() == 'Darwin' and pdb.set_trace()" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
