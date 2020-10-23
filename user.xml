@@ -1,21 +1,5 @@
 <templateSet group="user">
-  <template name="directory of current file" value="os.path.dirname(__file__)" description="" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
   <template name="&lt;abbreviation&gt;" value="from pyramids.software_engineering.view_the_program.logging.text._common._common import log_with_logger&#10;log_with_logger(f&quot;&quot;, do__append_variables=True)&#10;import platform; import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and not platform.system() == 'Darwin' and pdb.set_trace()" description="" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-      <option name="Python_Class" value="false" />
-    </context>
-  </template>
-  <template name="pdb simple minimal" value="import platform; import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and not platform.system() == 'Darwin' and pdb.set_trace()" description="" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-  <template name="get__current_spark_session" value="from pyramids.common.data_structures_operations.distributed_data_types._low_level.spark_session._interface import get__current_spark_session&#10;spark = get__current_spark_session()" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
