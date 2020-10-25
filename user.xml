@@ -11,4 +11,9 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="cd previous directory" value="local previous_directory=$(pwd)&#10;cd ${previous_directory}" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
 </templateSet>
