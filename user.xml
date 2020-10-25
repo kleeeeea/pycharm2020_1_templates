@@ -5,7 +5,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="get__current_spark_session" value="from pyramids.common.data_structures_operations.distributed_data_types._low_level.spark_session._interface import get__current_spark_session&#10;spark = get__current_spark_session()" toReformat="true" toShortenFQNames="true">
+  <template name="get__current_spark_session" value="from pyramids.common.data_structures_operations.distributed_data_types._low_level.spark_session._interface import get__current_spark_session&#10;spark = get__current_spark_session()" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
