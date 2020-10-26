@@ -151,7 +151,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="if main" value="if __name__ == '__main__':&#10;    from pyramids.common.human_computer_interface.commandline_argument._application.run import convert__commandline_argument__to__args_kwargs___and___run&#10;    convert__commandline_argument__to__args_kwargs___and___run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
+  <template name="if main" value="if __name__ == '__main__':&#10;    from pyramids.common.runtime_information.SourceCodeInterpreter._components.CommandlineArgument.io_op.export_to_FunctionArguments._alias.do_and_run import export_CommandlineArgument_to_FunctionArguments___and___run&#10;    export_CommandlineArgument_to_FunctionArguments___and___run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
     <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
