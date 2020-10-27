@@ -263,9 +263,8 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="try" value="try:&#10;    $stmt$&#10;except $Exception$ as e:&#10;    log_with_logger(e)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="try" value="try:&#10;    $stmt$                &#10;except Exception as e:&#10;    from pyramids.software_engineering.viewing.Logger.log_op import Logger_log&#10;    Logger_log(e)&#10;    " description="" toReformat="true" toShortenFQNames="true">
     <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="Exception" expression="" defaultValue="&quot;Exception&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -566,6 +565,13 @@
     </context>
   </template>
   <template name="pdb simple minimal" value="import platform; import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and not platform.system() == 'Darwin' and pdb.set_trace()" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="fold code" value="# $name_of_fold_region$&#10;if True:&#10;    $stmt$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="name_of_fold_region" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
