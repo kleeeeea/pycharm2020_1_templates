@@ -10,7 +10,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="nop" value="pass&#10;" toReformat="true" toShortenFQNames="true">
+  <template name="nop" value="pass&#10;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
