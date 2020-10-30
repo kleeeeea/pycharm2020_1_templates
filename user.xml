@@ -15,7 +15,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="regex space" value="\s" toReformat="true" toShortenFQNames="true">
+  <template name="regex space" value="\s" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="false" />
       <option name="CSS" value="false" />
@@ -35,7 +35,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="regex repetition" value="*" toReformat="true" toShortenFQNames="true">
+  <template name="regex repetition" value="*" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="false" />
       <option name="CSS" value="false" />
@@ -55,7 +55,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="regex one or more" value="+" toReformat="true" toShortenFQNames="true">
+  <template name="regex one or more" value="+" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="false" />
       <option name="CSS" value="false" />
@@ -75,7 +75,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="regex alphanumeric" value="\w" toReformat="true" toShortenFQNames="true">
+  <template name="regex alphanumeric" value="\w" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="false" />
       <option name="CSS" value="false" />
@@ -95,7 +95,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="regex capture group" value="($group_pattern$)" toReformat="true" toShortenFQNames="true">
+  <template name="regex capture group" value="($group_pattern$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="group_pattern" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
