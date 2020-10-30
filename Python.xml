@@ -425,7 +425,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="log" value="from pyramids.software_engineering.view_the_program.logging.text._interface.log import log_program&#10;log_program($m1$$logger_option$)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="log" value="from pyramids.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log(f&quot;{p} renamed to {p_new}&quot;)($m1$$logger_option$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="logger_option" expression="" defaultValue="&quot;, logger=logger&quot;" alwaysStopAt="true" />
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>

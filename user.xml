@@ -102,4 +102,11 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="fold code" value="function $func$() {&#10;     $stmt$&#10;}&#10;$func$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="func" expression="" defaultValue="&quot;x&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
 </templateSet>

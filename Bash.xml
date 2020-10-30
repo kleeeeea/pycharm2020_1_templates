@@ -569,10 +569,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if string is not empty" value="if [[ ! -z &quot;$parameter$&quot; ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;else&#10;    $STATEMENT_IF_false$&#10;fi" description="" toReformat="true" toShortenFQNames="false">
-    <variable name="parameter" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="true" />
-    <variable name="STATEMENT_IF_TRUE" expression="" defaultValue="&quot;echo \&quot;true\&quot;&quot;" alwaysStopAt="true" />
-    <variable name="STATEMENT_IF_false" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="nop" value="echo &gt; /dev/null" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
