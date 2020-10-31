@@ -439,14 +439,9 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="def" value="function $FUNCNAME$() {&#10;    local $default_argument$=${$default_argument_position$:-$default_argument_value$}&#10;    local $all_arguments_as_list$=&quot;$@&quot;&#10;    local $all_arguments_as_string$=$*&#10;    $statement$&#10;}" description="Function template (using python abbreviation)" toReformat="true" toShortenFQNames="false">
+  <template name="def" value="function $FUNCNAME$() {&#10;    $statement$&#10;}" description="Function template (using python abbreviation)" toReformat="true" toShortenFQNames="false">
+    <variable name="statement" expression="" defaultValue="&quot; $@&quot;" alwaysStopAt="true" />
     <variable name="FUNCNAME" expression="" defaultValue="&quot;function_name&quot;" alwaysStopAt="true" />
-    <variable name="statement" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="default_argument" expression="" defaultValue="&quot;argument1&quot;" alwaysStopAt="true" />
-    <variable name="default_argument_position" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
-    <variable name="default_argument_value" expression="" defaultValue="&quot;\&quot;value\&quot;&quot;" alwaysStopAt="true" />
-    <variable name="all_arguments_as_list" expression="" defaultValue="&quot;all_arguments_as_list&quot;" alwaysStopAt="true" />
-    <variable name="all_arguments_as_string" expression="" defaultValue="&quot;all_arguments_as_string&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
