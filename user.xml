@@ -109,4 +109,9 @@
       <option name="Bash" value="true" />
     </context>
   </template>
+  <template name="from bash comment" value="# from&#10;# bash&#10;# " description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
