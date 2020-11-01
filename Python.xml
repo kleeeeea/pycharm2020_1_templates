@@ -425,9 +425,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="log" value="from pyramids.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log(f&quot;{p} renamed to {p_new}&quot;)($m1$$logger_option$)" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="logger_option" expression="" defaultValue="&quot;, logger=logger&quot;" alwaysStopAt="true" />
+  <template name="log" value="from pyramids.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log(f$m1$$logger_option$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="logger_option" expression="" defaultValue="&quot;, logger=logger&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -489,12 +489,6 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="parent directory of this file" value="import os&#10;$parent_directory__of__this_file$ = os.path.dirname(__file__)" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="parent_directory__of__this_file" expression="" defaultValue="&quot;parent_directory&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
   <template name="local debugger" value="import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and pdb.set_trace()" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
@@ -542,7 +536,8 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="script directory" value="f&quot;{os.path.dirname(__file__)}/../&quot;" description="" toReformat="true" toShortenFQNames="true">
+  <template name="script directory" value="f&quot;{os.path.dirname(__file__)}/../$x$&quot;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
@@ -574,6 +569,114 @@
     <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="from bash comment" value="# from&#10;# bash&#10;# " description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="get__current_spark_session" value="from pyramids.common.data_structures_operations.distributed_data_types._low_level.spark_session._interface import get__current_spark_session&#10;spark = get__current_spark_session()" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="nop" value="pass&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="print single line" value="print(f&quot;{r}&quot;.strip())" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="regex alphanumeric" value="\w" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="regex capture group" value="($group_pattern$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="group_pattern" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="regex one or more" value="+" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="regex repetition" value="*" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="regex space" value="\s" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
     </context>
   </template>
 </templateSet>
