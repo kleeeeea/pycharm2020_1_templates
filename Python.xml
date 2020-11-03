@@ -203,7 +203,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="pdb" value="from pyramids.software_engineering.view_the_program.logging.text._interface.log import log_program&#10;log_program(f&quot;&quot;, do__append_variables=True)&#10;import platform; import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and not platform.system() == 'Darwin' and pdb.set_trace()" description="pdb" toReformat="false" toShortenFQNames="true">
+  <template name="pdb" value="import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and pdb.set_trace()" description="pdb" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -494,7 +494,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="debugger" value="from pyramids.software_engineering.view_the_program.logging.text._common._common import log_with_logger&#10;log_with_logger(f&quot;&quot;, do__append_variables=True)&#10;import platform; import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and not platform.system() == 'Darwin' and pdb.set_trace()" description="pdb" toReformat="false" toShortenFQNames="true">
+  <template name="debugger" value="import socket, pdb; not socket.gethostname().endswith('ygrid.yahoo.com') and pdb.set_trace()" description="pdb" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
