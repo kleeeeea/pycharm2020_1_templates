@@ -404,7 +404,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="is not None" value="is not None:" description="" toReformat="true" toShortenFQNames="true">
+  <template name="is not None" value="is not None&#10;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
