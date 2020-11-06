@@ -1,5 +1,5 @@
 <templateSet group="Other">
-  <template name="documentation reference" value=":pyLfunc:" toReformat="true" toShortenFQNames="true">
+  <template name="documentation reference" value=":pyLfunc:" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="false" />
       <option name="CSS" value="false" />

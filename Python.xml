@@ -452,7 +452,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="spark equals get or create spark" value="from kleeeeea_helper.common.data_structures_operations.distributed_data_types.low_level.startup.spark_session._interface import \&#10;        get_or_create_spark&#10;    spark = get_or_create_spark()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="spark equals get or create spark" value="from pyramids.common.Variable.DistributedGenericContainer.Base._backends.SparkSession._interface import create_SparkSession&#10;spark = create_SparkSession()" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
