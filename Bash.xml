@@ -569,7 +569,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="print inline" value="echo -n" description="" toReformat="true" toShortenFQNames="true">
+  <template name="print inline" value="echo -n " description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
