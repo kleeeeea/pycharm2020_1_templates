@@ -319,7 +319,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="return" value="echo $result$ " description="" toReformat="true" toShortenFQNames="true">
+  <template name="return in function" value="echo $result$ " description="" toReformat="true" toShortenFQNames="true">
     <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
