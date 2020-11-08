@@ -247,11 +247,6 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="script_directory_path" value="import os&#10;script_directory_path = os.path.dirname(__file__)&#10;os.chdir(script_directory_path)&#10;" description="script_directory_path" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
   <template name="self attribute equals attribute" value="self.$attribute$ = $attribute$" description="" toReformat="false" toShortenFQNames="true">
     <variable name="attribute" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -540,7 +535,6 @@
     <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
-      <option name="Python_Class" value="false" />
     </context>
   </template>
   <template name="is None" value="is None" description="" toReformat="true" toShortenFQNames="true">
