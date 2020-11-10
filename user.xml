@@ -21,14 +21,14 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="if string equal" value="if [[ ${$s1$} = $s2$ ]]; then&#10;    echo &gt; /dev/null&#10;fi" toReformat="true" toShortenFQNames="true">
+  <template name="if string equal" value="if [[ ${$s1$} = $s2$ ]]; then&#10;    echo &gt; /dev/null&#10;fi" description="" toReformat="true" toShortenFQNames="true">
     <variable name="s1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="s2" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="stop" value="return" toReformat="true" toShortenFQNames="true">
+  <template name="stop" value="return" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
