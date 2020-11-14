@@ -33,7 +33,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if is str import" value="if isinstance($ModelClass$, str):&#10;        from pyramids.common.runtime_information.SourceCodeInterpreter._components.SourceCodePath.ImportedLibraries._components.ImportableLibrary._components.ImportableLibraryAttribute.io_ops.export_op import ImportableLibraryAttribute_to_Object&#10;        $ModelClass$ = ImportableLibraryAttribute_to_Object($ModelClass$)" toReformat="true" toShortenFQNames="true">
+  <template name="if is str import" value="if isinstance($ModelClass$, str):&#10;        from pyramids.common.runtime_information.SourceCodeInterpreter._components.SourceCodePath.ImportedLibraries._components.ImportableLibrary._components.ImportableLibraryAttribute.io_ops.export_op import ImportableLibraryAttribute_to_Object&#10;        $ModelClass$ = ImportableLibraryAttribute_to_Object($ModelClass$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="ModelClass" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
