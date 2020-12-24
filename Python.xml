@@ -301,7 +301,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="p" value="print(&quot;********************************************************************************&quot;)&#10;print(f&quot;{$xx$}\n&quot;&#10;    &quot;^^^($xx$)^^^&quot;)&#10;print(&quot;********************************************************************************&quot;)   " description="" toReformat="true" toShortenFQNames="true">
+  <template name="p" value="print(&quot;********************************************************************************&quot;)&#10;print(f'{$xx$}\n'&#10;    '^^^($xx$)^^^')&#10;print(&quot;********************************************************************************&quot;)   " description="" toReformat="true" toShortenFQNames="true">
     <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -420,7 +420,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="log" value="from pyramids.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log(f$m1$$logger_option$)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="log full" value="from pyramids.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log($m1$$logger_option$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="logger_option" expression="" defaultValue="&quot;, logger=logger&quot;" alwaysStopAt="true" />
     <context>
@@ -531,7 +531,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="script directory" value="f&quot;{os.path.dirname(__file__)}/../$x$&quot;" description="" toReformat="true" toShortenFQNames="true">
+  <template name="script directory" value="f&quot;{os.path.dirname(__file__)}/$x$&quot;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -671,6 +671,12 @@
       <option name="SQL" value="false" />
       <option name="TypeScript" value="false" />
       <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="log" value="Logger_log($m1$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
     </context>
   </template>
 </templateSet>
