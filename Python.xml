@@ -104,7 +104,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="get_spark_session" value="from kleeeeea_helper.distributed_computation_spark import get_spark_session&#10;&#10;spark = get_spark_session()&#10;sc = spark.sparkContext&#10;" description="spark template" toReformat="false" toShortenFQNames="true">
+  <template name="get_spark_session" value="from vzmi.mlx.distributed_computation_spark import get_spark_session&#10;&#10;spark = get_spark_session()&#10;sc = spark.sparkContext&#10;" description="spark template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -151,7 +151,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="if main" value="if __name__ == '__main__':&#10;    from vzmi.pyramids.common.runtime_information.SourceCodeInterpreter._components.CommandlineArgument.io_op.export_to_FunctionArguments._alias.do_and_run import export_CommandlineArgument_to_FunctionArguments___and___run&#10;    export_CommandlineArgument_to_FunctionArguments___and___run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
+  <template name="if main" value="if __name__ == '__main__':&#10;    from vzmi.mlx.common.runtime_information.SourceCodeInterpreter._components.CommandlineArgument.io_op.export_to_FunctionArguments._alias.do_and_run import export_CommandlineArgument_to_FunctionArguments___and___run&#10;    export_CommandlineArgument_to_FunctionArguments___and___run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
     <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -258,7 +258,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="try" value="try:&#10;    $stmt$                &#10;except Exception as e:&#10;    from vzmi.pyramids.software_engineering.viewing.Logger.log_op import Logger_log&#10;    Logger_log(e)&#10;    " description="" toReformat="true" toShortenFQNames="true">
+  <template name="try" value="try:&#10;    $stmt$                &#10;except Exception as e:&#10;    from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;    Logger_log(e)&#10;    " description="" toReformat="true" toShortenFQNames="true">
     <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -283,7 +283,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="iflen_args_1_and_is_collection_args_0" value="# support passing arguments as one single arguments&#10;from kleeeeea_helper.common.data_structures_operations.aggregate_data_types._common.data_types._common import \&#10;        is_collection&#10;if len($args$) == 1 and is_collection ($args$[0]):&#10;    return $func$(*$args$[0], $arguments$)" description="iflen_args_1_and_is_collection_args_0" toReformat="true" toShortenFQNames="true">
+  <template name="iflen_args_1_and_is_collection_args_0" value="# support passing arguments as one single arguments&#10;from vzmi.mlx.common.data_structures_operations.aggregate_data_types._common.data_types._common import \&#10;        is_collection&#10;if len($args$) == 1 and is_collection ($args$[0]):&#10;    return $func$(*$args$[0], $arguments$)" description="iflen_args_1_and_is_collection_args_0" toReformat="true" toShortenFQNames="true">
     <variable name="func" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="arguments" expression="" defaultValue="&quot;**kwargs&quot;" alwaysStopAt="true" />
     <variable name="args" expression="" defaultValue="&quot;args&quot;" alwaysStopAt="true" />
@@ -420,7 +420,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="log full" value="from pyramids.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log($m1$$logger_option$)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="log full" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log($m1$$logger_option$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="logger_option" expression="" defaultValue="&quot;, logger=logger&quot;" alwaysStopAt="true" />
     <context>
@@ -447,7 +447,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="spark equals get or create spark" value="from pyramids.common.Variable.DistributedGenericContainer.Base._backends.SparkSession._interface import create_SparkSession&#10;spark = create_SparkSession()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="spark equals get or create spark" value="from vzmi.mlx.common.Variable.DistributedGenericContainer.Base._backends.SparkSession._interface import create_SparkSession&#10;spark = create_SparkSession()" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -507,7 +507,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="if main run___method___with___args_kwargs__from__command_line" value="if __name__ == '__main__':&#10;    from pyramids.common.human_computer_interface.commandline_argument._application.run import convert__commandline_argument__to__args_kwargs___and___run&#10;    convert__commandline_argument__to__args_kwargs___and___run($main_preprocess___train_test___for__filtered_data$)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="if main run___method___with___args_kwargs__from__command_line" value="if __name__ == '__main__':&#10;    from vzmi.mlx.common.human_computer_interface.commandline_argument._application.run import convert__commandline_argument__to__args_kwargs___and___run&#10;    convert__commandline_argument__to__args_kwargs___and___run($main_preprocess___train_test___for__filtered_data$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -675,6 +675,65 @@
   </template>
   <template name="log" value="Logger_log($m1$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if is str import" value="if isinstance($ModelClass$, str):&#10;        from mlx.common.runtime_information.SourceCodeInterpreter._components.SourceCodePath.ImportedLibraries._components.ImportableLibrary._components.ImportableLibraryAttribute.io_ops.export_op import ImportableLibraryAttribute_to_Object&#10;        $ModelClass$ = ImportableLibraryAttribute_to_Object($ModelClass$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="ModelClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if string equal" value="if [[ ${$s1$} = $s2$ ]]; then&#10;    echo &gt; /dev/null&#10;fi" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="s1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="s2" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
+  <template name="ImportableLibraryAttribute_to_Object" value="if isinstance($obj$, str):&#10;        from mlx.common.runtime_information.SourceCodeInterpreter._components.SourceCodePaths.ImportedLibraries._components.ImportableLibrary._components.ImportableLibraryAttribute.io_ops.export_op import ImportableLibraryAttribute_to_Object&#10;        $obj$ = ImportableLibraryAttribute_to_Object($obj$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="optional  leave blank to" value=": Optional[$str$], left blank to $s$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="s" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="str" expression="" defaultValue="&quot;str&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="self = AttrDict" value="from vzmi.mlx.common.Variable.LocalGenericContainer.HashBasedLocalGenericContainer.Dictionary.Attrdict import AttrDict&#10;self = AttrDict()" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="stop" value="return" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
+  <template name="try excetp importerror" value="try:&#10;        $stmt$&#10;except ImportError as e:&#10;        from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;        Logger_log(e)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
