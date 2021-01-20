@@ -99,7 +99,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="from_kleeeeea_helper_imports_light" value="from kleeeeea_helper.startup_imports.imports_light import *" description="from_kleeeeea_helper_imports_light_description" toReformat="false" toShortenFQNames="true">
+  <template name="from_kleeeeea_helper_imports_light" value="from vzmi.mlx.imports import *" description="from_kleeeeea_helper_imports_light_description" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -547,7 +547,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="get spark" value="from pyramids.common.data_structures_operations.distributed_data_types._low_level.spark_session._interface import get__current_spark_session&#10;spark = get__current_spark_session()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="get spark" value="from vzmi.mlx.common.data_structures_operations.distributed_data_types._low_level.spark_session._interface import get__current_spark_session&#10;spark = get__current_spark_session()" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
@@ -570,7 +570,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="get__current_spark_session" value="from pyramids.common.data_structures_operations.distributed_data_types._low_level.spark_session._interface import get__current_spark_session&#10;spark = get__current_spark_session()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="get__current_spark_session" value="from vzmi.mlx.common.data_structures_operations.distributed_data_types._low_level.spark_session._interface import get__current_spark_session&#10;spark = get__current_spark_session()" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
