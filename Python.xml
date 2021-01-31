@@ -14,7 +14,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="args kwargs" value="*args, **kwargs" description="args_kwargs" toReformat="false" toShortenFQNames="true">
+  <template name="args kwargs" value="*_args, **_kwargs" description="args_kwargs" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Bash" value="false" />
       <option name="CSS" value="false" />
