@@ -738,9 +738,14 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="alias for parameter" value="# parameter alias&#10;if $parameter$ is None:&#10;    if $alias$ is not None:&#10;        $parameter$ = $alias$" toReformat="true" toShortenFQNames="true">
+  <template name="alias for parameter" value="# parameter alias&#10;if $parameter$ is None:&#10;    if $alias$ is not None:&#10;        $parameter$ = $alias$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="parameter" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="alias" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="if is not instance" value="if not isinstance(vals, pandas.Series):&#10;        vals = pandas.Series(vals)" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
