@@ -538,7 +538,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="alias" value="function $name$() {&#10;    $command$ $@&#10;}" description="" toReformat="true" toShortenFQNames="true">
+  <template name="alias" value="alias $name$=$command$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="command" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
