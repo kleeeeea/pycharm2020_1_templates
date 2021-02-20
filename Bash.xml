@@ -239,7 +239,7 @@
     </context>
   </template>
   <template name="for-var-in-from-pycharm" value="for $LOOPVAR$ in $LOOPITEMS$ ; do&#10;    $END$$SELECTION$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false">
-    <variable name="LOOPVAR" expression="" defaultValue="&quot;VAR&quot;" alwaysStopAt="true" />
+    <variable name="LOOPVAR" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
     <variable name="LOOPITEMS" expression="" defaultValue="&quot;item1 item2 item3&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
@@ -599,5 +599,10 @@
     <context>
       <option name="Bash" value="true" />
     </context>
+  </template>
+  <template name="for-each-in" value="for $LOOPVAR$ in $LOOPITEMS$ ; do&#10;    $END$$SELECTION$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false">
+    <variable name="LOOPVAR" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
+    <variable name="LOOPITEMS" expression="" defaultValue="&quot;item1 item2 item3&quot;" alwaysStopAt="true" />
+    <context />
   </template>
 </templateSet>
