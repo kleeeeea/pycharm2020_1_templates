@@ -611,4 +611,13 @@
       <option name="Bash" value="true" />
     </context>
   </template>
+  <template name="for run" value="for $variable$ in $space_separated_values$; do&#10;    InPersistentSessionLocalProcess_open pp $file$ --$parameter_name$ ${$variable$}&#10;done" toReformat="true" toShortenFQNames="true">
+    <variable name="file" expression="" defaultValue="&quot;path.py&quot;" alwaysStopAt="true" />
+    <variable name="space_separated_values" expression="" defaultValue="&quot;2 3 4 5&quot;" alwaysStopAt="true" />
+    <variable name="parameter_name" expression="" defaultValue="&quot;parameter&quot;" alwaysStopAt="true" />
+    <variable name="variable" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
 </templateSet>

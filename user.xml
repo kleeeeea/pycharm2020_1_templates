@@ -1,9 +1,5 @@
 <templateSet group="user">
-  <template name="for run" value="for $variable$ in $space_separated_values$; do&#10;    InPersistentSessionLocalProcess_open pp $file$ --$parameter_name$ ${$variable$}&#10;done" toReformat="true" toShortenFQNames="true">
-    <variable name="file" expression="" defaultValue="&quot;path.py&quot;" alwaysStopAt="true" />
-    <variable name="space_separated_values" expression="" defaultValue="&quot;2 3 4 5&quot;" alwaysStopAt="true" />
-    <variable name="parameter_name" expression="" defaultValue="&quot;parameter&quot;" alwaysStopAt="true" />
-    <variable name="variable" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
+  <template name="&lt;abbreviation&gt;" value="for variable in 25 2 5 10 15 50 100 200 300 500 1000; do&#10;    InPersistentSessionLocalProcess_open pp libs/vzmi/mlx/data_science/Task/SupervisedLearning/Base/WithLocalModel/ViaHiveTable/_components/TrainEvaluateFromLibSVM/run.py --number_of_files_to_generate_localLabeledData ${variable}&#10;done" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
