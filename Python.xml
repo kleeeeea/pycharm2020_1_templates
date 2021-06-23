@@ -57,7 +57,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="decorator" value="def $func$(orig_func):&#10;    @wraps(orig_func)&#10;    def wrapper(*args, **kwargs):&#10;        result = orig_func(*args, **kwargs)&#10;        $stmt$&#10;        return result&#10;&#10;    return wrapper" description="" toReformat="true" toShortenFQNames="true">
+  <template name="decorator" value="def $func$(orig_func):&#10;    from functools import wraps&#10;&#10;    @wraps(orig_func)&#10;    def wrapper(*args, **kwargs):&#10;        result = orig_func(*args, **kwargs)&#10;        $stmt$&#10;        return result&#10;&#10;    return wrapper" description="" toReformat="true" toShortenFQNames="true">
     <variable name="func" expression="" defaultValue="&quot;decorator&quot;" alwaysStopAt="true" />
     <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -65,7 +65,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="decorator_def" value="@decorator&#10;def $var1$(f, *args, **kwargs):&#10;    result = f(*args, **kwargs)&#10;    return result" description="decorator_def" toReformat="false" toShortenFQNames="true">
+  <template name="decorator in statements" value="@decorator&#10;def $var1$(f, *args, **kwargs):&#10;    result = f(*args, **kwargs)&#10;    return result" description="decorator_def" toReformat="false" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="function_decorator" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
