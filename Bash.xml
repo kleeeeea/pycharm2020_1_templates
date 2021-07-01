@@ -511,7 +511,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="script directory" value="$(dirname &quot;$0&quot;)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="script directory" value="$(realpath $(dirname &quot;$0&quot;))" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
@@ -545,11 +545,12 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if in OS" value="if [[ &quot;$(uname)&quot; == &quot;Darwin&quot; ]]&#10;then&#10;        $ss$&#10;elif [[ $(hostname -s) == *home-kli02-* ]]&#10;then&#10;        $ss1$&#10;elif [[ &quot;$(hostname)&quot; == *.yahoo.com ]]&#10;then&#10;        $ss2$&#10;else&#10;    $ss3$&#10;fi" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="ss" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ss1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ss2" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ss3" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="if in OS" value="if [[ &quot;$(uname)&quot; == &quot;Darwin&quot; ]]&#10;then&#10;        $ss$&#10;elif [[ $(hostname -s) == *home-kli02-* ]]&#10;then&#10;        $ss1$&#10;elif [[ &quot;$(hostname)&quot; == *.yahoo.com ]]&#10;then&#10;        $ss2$&#10;elif [[ &quot;$(awk -F= '/^NAME/{print $2}' /etc/os-release)&quot; == &quot;\&quot;Ubuntu\&quot;&quot; ]]&#10;then&#10;    $ssx$&#10;else&#10;    $ss3$&#10;fi" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="ss" expression="" defaultValue="&quot;echo &gt; /dev/null&quot;" alwaysStopAt="true" />
+    <variable name="ss1" expression="" defaultValue="&quot;echo &gt; /dev/null&quot;" alwaysStopAt="true" />
+    <variable name="ss2" expression="" defaultValue="&quot;echo &gt; /dev/null&quot;" alwaysStopAt="true" />
+    <variable name="ssx" expression="" defaultValue="&quot;echo &gt; /dev/null&quot;" alwaysStopAt="true" />
+    <variable name="ss3" expression="" defaultValue="&quot;echo &gt; /dev/null&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
