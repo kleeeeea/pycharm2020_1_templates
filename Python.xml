@@ -301,8 +301,9 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="p" value="print(&quot;********************************************************************************&quot;)&#10;print(f'{$xx$}\n'&#10;    '^^^($xx$)^^^')&#10;print(&quot;********************************************************************************&quot;)   " description="" toReformat="true" toShortenFQNames="true">
+  <template name="p" value="print(&quot;********************************************************************************&quot;)&#10;print(f'{$xx$}\n'&#10;    '^^^($xx$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print(&quot;********************************************************************************&quot;)   " description="" toReformat="true" toShortenFQNames="true">
     <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cc" expression="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>

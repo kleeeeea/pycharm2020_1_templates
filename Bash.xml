@@ -274,8 +274,9 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="p" value="echo '**************************************************************************'&#10;echo &quot;$$$value$&quot;&#10;echo '^^($value$)^^'&#10;echo '**************************************************************************'" description="echo the command and execute" toReformat="true" toShortenFQNames="false">
+  <template name="p" value="echo '**************************************************************************'&#10;echo &quot;$$$value$&quot;&#10;echo '^^($value$)^^'&#10;echo &quot;at:&quot;&#10;echo &quot;$cc$&quot;&#10;echo '**************************************************************************'&#10;" description="echo the command and execute" toReformat="true" toShortenFQNames="false">
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cc" expression="" defaultValue="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
