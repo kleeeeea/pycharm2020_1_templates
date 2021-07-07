@@ -31,7 +31,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="def injectable" value="class $name$_Class:&#10;    def __init__(self, $injectable_parameter$=None, ):&#10;        self.$injectable_parameter$ = $injectable_parameter$&#10;&#10;    def __call__(self, $injectable_parameter$=None, *args, **kwargs):&#10;        if $injectable_parameter$ is None:&#10;            $injectable_parameter$ = self.$injectable_parameter$" toReformat="true" toShortenFQNames="true">
+  <template name="def injectable" value="class $name$_Class:&#10;    def __init__(self, $injectable_parameter$=None, ):&#10;        self.$injectable_parameter$ = $injectable_parameter$&#10;&#10;    def __call__(self, $injectable_parameter$=None, *args, **kwargs):&#10;        if $injectable_parameter$ is None:&#10;            $injectable_parameter$ = self.$injectable_parameter$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="injectable_parameter" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
