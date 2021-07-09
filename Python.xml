@@ -280,7 +280,22 @@
     <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="expr" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="Python" value="true" />
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
     </context>
   </template>
   <template name="iflen_args_1_and_is_collection_args_0" value="# support passing arguments as one single arguments&#10;from vzmi.mlx.common.data_structures_operations.aggregate_data_types._common.data_types._common import \&#10;        is_collection&#10;if len($args$) == 1 and is_collection ($args$[0]):&#10;    return $func$(*$args$[0], $arguments$)" description="iflen_args_1_and_is_collection_args_0" toReformat="true" toShortenFQNames="true">
