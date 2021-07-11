@@ -335,7 +335,7 @@
   </template>
   <template name="def" value="def $function$($param$):&#10;    $x$" description="" toReformat="false" toShortenFQNames="true">
     <variable name="function" expression="" defaultValue="&quot;test&quot;" alwaysStopAt="true" />
-    <variable name="param" expression="" defaultValue="&quot;*_args, **_kwargs&quot;" alwaysStopAt="true" />
+    <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -780,6 +780,13 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="class function class" value="class $function$__Function_Class:&#10;    def __init__(&#10;            self,&#10;            $parameters$&#10;    ):&#10;        pass&#10;def __call__(self, *args, **kwargs):&#10;    pass" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parameters" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
   <template name="declare variable type" value="assert isinstance($name$, $type$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
@@ -795,6 +802,33 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="function_creator stub" value="_Function_creator&#10;def f():&#10;    $body$&#10;return f" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="body" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="nonlocal" value="nonlocal " description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+>>>>>>> Stashed changes
   <template name="uncomment to speed up" value="uncomment to speed up" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
