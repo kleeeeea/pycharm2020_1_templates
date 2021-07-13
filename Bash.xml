@@ -346,13 +346,10 @@
   </template>
   <template name="args" value="$@" description="" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="Django" value="false" />
-      <option name="HTML" value="false" />
-      <option name="JSON" value="false" />
-      <option name="OTHER" value="true" />
-      <option name="Python" value="false" />
-      <option name="SQL" value="false" />
-      <option name="XML" value="false" />
+      <option name="Bash" value="true" />
+      <option name="CSS" value="true" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
+      <option name="CoffeeScript" value="true" />
     </context>
   </template>
   <template name="function simple" value="function $FUNCNAME$() {&#10;    $END$$SELECTION$&#10;}" description="Function template" toReformat="true" toShortenFQNames="false">

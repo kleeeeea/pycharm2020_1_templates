@@ -70,21 +70,25 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="dictionary add" value="Dictionaries_concatenate(&#10;        [&#10;            $dicts$    &#10;        ]&#10;)" toReformat="true" toShortenFQNames="true">
+  <template name="dictionary add" value="Dictionaries_concatenate(&#10;        [&#10;            $dicts$    &#10;        ]&#10;)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="dicts" expression="" defaultValue="" alwaysStopAt="true" />
-  <template name="apply function inplace" value="$variable$=$func$($variable$)" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="func" expression="" defaultValue="&quot;to_Hashable&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="partial" value="lambda $parameter$: $function$" toReformat="true" toShortenFQNames="true">
-    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="par" value="lambda $parameter$: $function$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="parameter" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="lam" value="lambda $parameter$: $function$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="parameter" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
     </context>
   </template>
 </templateSet>

@@ -14,7 +14,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="args kwargs" value="*args, **kwargs" description="args_kwargs (do not add underscore to allow unused variable inspection)   (please only use it in shell and functool wrapper)" toReformat="false" toShortenFQNames="true">
+  <template name="args" value="*args" description="args" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Bash" value="false" />
       <option name="CSS" value="false" />
@@ -504,6 +504,13 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="code folding regions" value="# $name_of_fold_region$&#10;if True:&#10;    $stmt$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="name_of_fold_region" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
   <template name="if True" value="if True:&#10;    $stmt$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -561,9 +568,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fold code" value="######################################################################&#10;##&#10;##      $name_of_fold_region$    &#10;##&#10;######################################################################&#10;if True:&#10;    $stmt$" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="fold code" value="# $name_of_fold_region$&#10;if True:&#10;    $stmt$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="name_of_fold_region" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -824,13 +831,6 @@
   <template name="uncomment to speed up" value="uncomment to speed up" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="OTHER" value="true" />
-    </context>
-  </template>
-  <template name="ass" value="print(&quot;********************************************************************************&quot;)&#10;assert $xx$&#10;print(f'{$xx$}\n'&#10;    '^^^asserting  ($xx$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print(&quot;********************************************************************************&quot;)   " description="" toReformat="true" toShortenFQNames="true">
-    <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="cc" expression="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
     </context>
   </template>
 </templateSet>
