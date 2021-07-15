@@ -768,8 +768,9 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="class function class" value="class $function$__Function_Class:&#10;    def __init__(&#10;            self,&#10;            $parameters$&#10;    ):&#10;        pass&#10;def __call__(self, *args, **kwargs):&#10;    pass" description="" toReformat="true" toShortenFQNames="true">
+  <template name="class function class" value="class $function$__Task($HypernymTask$):&#10;    def __init__(&#10;            self,&#10;            $parameters$&#10;    ):&#10;        pass&#10;def __call__(self, *args, **kwargs):&#10;    pass" description="" toReformat="true" toShortenFQNames="true">
     <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HypernymTask" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="parameters" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -791,7 +792,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="task definition" value="class $name$_Task:&#10;    def __init__(self,&#10;    ):&#10;        # no arg kwargs in function class&#10;        pass&#10;&#10;def __call__(self, *_args, **_kwargs):&#10;    pass&#10;" description="function class stub" toReformat="true" toShortenFQNames="true">
+  <template name="task definition" value="class $name$_Task:&#10;    def __init__(self,&#10;    ):&#10;        # no arg kwargs in function class&#10;        pass&#10;&#10;def __call__(self):&#10;    pass&#10;" description="function class stub" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
