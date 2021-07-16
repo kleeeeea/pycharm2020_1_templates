@@ -1,5 +1,5 @@
 <templateSet group="user">
-  <template name="if not connected" value="from vzmi.mlx.common.runtime_information.OperatingSystem.ConnnectedToDistributedFilesystem.is_class import is_OperatingSystem_ConnnectedToDistributedFilesystem&#10;if not is_OperatingSystem_ConnnectedToDistributedFilesystem():&#10;    return" toReformat="true" toShortenFQNames="true">
+  <template name="if not connected" value="from vzmi.mlx.common.runtime_information.OperatingSystem.ConnnectedToDistributedFilesystem.is_class import is_OperatingSystem_ConnnectedToDistributedFilesystem&#10;if not is_OperatingSystem_ConnnectedToDistributedFilesystem():&#10;    return" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
