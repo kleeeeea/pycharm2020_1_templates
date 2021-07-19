@@ -1,19 +1,19 @@
 <templateSet group="Bash">
-  <template name="case" value="case $value$ in&#10; $pattern$)&#10;  $END$ ;;&#10;  *)&#10;    echo ''&#10;    ;;&#10;esac&#10;" description="Case statement" toReformat="false" toShortenFQNames="false" deactivated="true">
+  <template name="case" value="case $value$ in&#10; $pattern$)&#10;  $END$ ;;&#10;  *)&#10;    echo ''&#10;    ;;&#10;esac&#10;" description="Case statement" toReformat="false" toShortenFQNames="false">
     <variable name="value" expression="" defaultValue="&quot;$x&quot;" alwaysStopAt="true" />
     <variable name="pattern" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="case_pattern2" value="$a$|$b$)&#10;  $END$ ;;" description="Case pattern with two alternatives" toReformat="false" toShortenFQNames="false" deactivated="true">
+  <template name="case_pattern2" value="$a$|$b$)&#10;  $END$ ;;" description="Case pattern with two alternatives" toReformat="false" toShortenFQNames="false">
     <variable name="a" expression="" defaultValue="&quot;$a&quot;" alwaysStopAt="true" />
     <variable name="b" expression="" defaultValue="&quot;$b&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="function" value="function $FUNCNAME$() {&#10;    local $default_argument$=${$default_argument_position$:-$default_argument_value$}&#10;    local $all_arguments_as_list$=(&quot;$@&quot;)&#10;    local $all_arguments_as_string$=$*&#10;    $statement$&#10;}" description="Function template" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="function" value="function $FUNCNAME$() {&#10;    local $default_argument$=${$default_argument_position$:-$default_argument_value$}&#10;    local $all_arguments_as_list$=(&quot;$@&quot;)&#10;    local $all_arguments_as_string$=$*&#10;    $statement$&#10;}" description="Function template" toReformat="true" toShortenFQNames="false">
     <variable name="FUNCNAME" expression="" defaultValue="&quot;function_name&quot;" alwaysStopAt="true" />
     <variable name="statement" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="default_argument" expression="" defaultValue="&quot;argument1&quot;" alwaysStopAt="true" />
@@ -25,7 +25,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if_command_result" value="if [[ &quot;$($command$)&quot; == $pattern_string$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;fi" description="if statement" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="if_command_result" value="if [[ &quot;$($command$)&quot; == $pattern_string$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;fi" description="if statement" toReformat="true" toShortenFQNames="false">
     <variable name="command" expression="" defaultValue="&quot;uname -s&quot;" alwaysStopAt="true" />
     <variable name="pattern_string" expression="" defaultValue="&quot;*\&quot;Darwin\&quot;*&quot;" alwaysStopAt="true" />
     <variable name="STATEMENT_IF_TRUE" expression="" defaultValue="&quot;echo \&quot;true\&quot;&quot;" alwaysStopAt="true" />
@@ -33,7 +33,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if_else" value="if [[ $TEST$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;else&#10;    $STATEMENT_IF_FALSE$&#10;fi" description="if-else statement" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="if_else" value="if [[ $TEST$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;else&#10;    $STATEMENT_IF_FALSE$&#10;fi" description="if-else statement" toReformat="true" toShortenFQNames="false">
     <variable name="TEST" expression="" defaultValue="&quot;1 == 1&quot;" alwaysStopAt="true" />
     <variable name="STATEMENT_IF_TRUE" expression="" defaultValue="&quot;echo \&quot;true\&quot;&quot;" alwaysStopAt="true" />
     <variable name="STATEMENT_IF_FALSE" expression="" defaultValue="&quot;echo \&quot;false\&quot;&quot;" alwaysStopAt="true" />
@@ -41,7 +41,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="for-var-in-list" value="arr=(&#10;    $elements1$&#10;    $elements1$&#10;    $elements1$&#10;    $elements2$&#10;)&#10;for $var$ in $arr[@]&#10;do&#10;  $STATEMENT_IN_FOR_LOOP$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="for-var-in-list" value="arr=(&#10;    $elements1$&#10;    $elements1$&#10;    $elements1$&#10;    $elements2$&#10;)&#10;for $var$ in $arr[@]&#10;do&#10;  $STATEMENT_IN_FOR_LOOP$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false">
     <variable name="elements1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="elements2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true" />
@@ -50,27 +50,27 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="usr_bin_env_bash" value="#!$ENV$ $BASH$&#10;$END$" description="shebang line" toReformat="false" toShortenFQNames="false" deactivated="true">
+  <template name="usr_bin_env_bash" value="#!$ENV$ $BASH$&#10;$END$" description="shebang line" toReformat="false" toShortenFQNames="false">
     <variable name="ENV" expression="" defaultValue="&quot;/usr/bin/env&quot;" alwaysStopAt="false" />
     <variable name="BASH" expression="enum(&quot;bash&quot;,&quot;sh&quot;)" defaultValue="bash" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if_command_exists" value="if command -v $COMMAND$ &amp;&gt;/dev/null&#10;then&#10;    $COMMAND$&#10;fi" description="if no command" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="if_command_exists" value="if command -v $COMMAND$ &amp;&gt;/dev/null&#10;then&#10;    $COMMAND$&#10;fi" description="if no command" toReformat="true" toShortenFQNames="false">
     <variable name="COMMAND" expression="" defaultValue="&quot;wget&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if_file_exists" value="if [[ -e $directory$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;fi" description="if statement" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="if_file_exists" value="if [[ -e $directory$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;fi" description="if statement" toReformat="true" toShortenFQNames="false">
     <variable name="directory" expression="" defaultValue="&quot;~&quot;" alwaysStopAt="true" />
     <variable name="STATEMENT_IF_TRUE" expression="" defaultValue="&quot;echo \&quot;true\&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if_elif_if" value="if [[ $TEST$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;elif test $TEST2$&#10;then&#10;    $STATEMENT_ELIF_TRUE$&#10;else&#10;    $STATEMENT_IF_FALSE$&#10;fi" description="if-else statement" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="if_elif_if" value="if [[ $TEST$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;elif test $TEST2$&#10;then&#10;    $STATEMENT_ELIF_TRUE$&#10;else&#10;    $STATEMENT_IF_FALSE$&#10;fi" description="if-else statement" toReformat="true" toShortenFQNames="false">
     <variable name="TEST" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="STATEMENT_IF_TRUE" expression="" defaultValue="&quot;echo \&quot;true\&quot;&quot;" alwaysStopAt="true" />
     <variable name="TEST2" expression="" defaultValue="&quot;1 == 1&quot;" alwaysStopAt="true" />
@@ -80,19 +80,19 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="echo_simple" value="echo &quot;$command$&quot;&#10;echo '$command$'" description="echo the command and execute" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="echo_simple" value="echo &quot;$command$&quot;&#10;echo '$command$'" description="echo the command and execute" toReformat="true" toShortenFQNames="false">
     <variable name="command" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="read" value="read $x$" description="read" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="read" value="read $x$" description="read" toReformat="true" toShortenFQNames="false">
     <variable name="x" expression="" defaultValue="x" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="for-var-in-output" value="for $FILE$ in $(find -type f $DIRECTORY$)&#10;do&#10;  $STATEMENT_IN_FOR$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="for-var-in-output" value="for $FILE$ in $(find -type f $DIRECTORY$)&#10;do&#10;  $STATEMENT_IN_FOR$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false">
     <variable name="DIRECTORY" expression="" defaultValue="&quot;~/.zshrc.d/zshrc_ext/extra/&quot;" alwaysStopAt="true" />
     <variable name="STATEMENT_IN_FOR" expression="" defaultValue="&quot;echo $file&quot;" alwaysStopAt="true" />
     <variable name="FILE" expression="" defaultValue="&quot;file&quot;" alwaysStopAt="true" />
@@ -100,7 +100,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="for_i_in_range" value="for $i$ in $(seq $start$ $step$ $end$)&#10;do&#10;  $statement_in_for$&#10;done" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="for_i_in_range" value="for $i$ in $(seq $start$ $step$ $end$)&#10;do&#10;  $statement_in_for$&#10;done" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false">
     <variable name="i" expression="" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
     <variable name="start" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
     <variable name="step" expression="" defaultValue="&quot;10&quot;" alwaysStopAt="true" />
@@ -110,7 +110,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="default_variable_value" value="$default_argument$=${$default_argument_to_get_value_from$:-$default_argument_value$}" description="Case statement" toReformat="false" toShortenFQNames="false" deactivated="true">
+  <template name="default_variable_value" value="$default_argument$=${$default_argument_to_get_value_from$:-$default_argument_value$}" description="Case statement" toReformat="false" toShortenFQNames="false">
     <variable name="default_argument" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true" />
     <variable name="default_argument_to_get_value_from" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
     <variable name="default_argument_value" expression="" defaultValue="&quot;\&quot;bash\&quot;&quot;" alwaysStopAt="true" />
@@ -118,35 +118,35 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="while" value="$initial_condition$&#10;while test $TEST$&#10;do&#10;    $ENDSELECTION$&#10;done" description="while-loop" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="while" value="$initial_condition$&#10;while test $TEST$&#10;do&#10;    $ENDSELECTION$&#10;done" description="while-loop" toReformat="true" toShortenFQNames="false">
     <variable name="initial_condition" expression="" defaultValue="&quot;counter=1&quot;" alwaysStopAt="true" />
     <variable name="TEST" expression="" defaultValue="&quot;$counter -le 10&quot;" alwaysStopAt="true" />
     <variable name="ENDSELECTION" expression="" defaultValue="&quot;echo $counter; ((counter++))&quot;" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="pass" value="echo &gt; /dev/null" description="Function template" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="pass" value="echo &gt; /dev/null" description="Function template" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if" value="if [[ &quot;$($command$)&quot; == $pattern_string$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;fi" description="if statement" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="if" value="if [[ &quot;$($command$)&quot; == $pattern_string$ ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;fi" description="if statement" toReformat="true" toShortenFQNames="false">
     <variable name="command" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="pattern_string" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="STATEMENT_IF_TRUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="expression" value="expr " description="" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="expression" value="expr " description="" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="evalute expression" value="$(($expression$))" description="" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="evalute expression" value="$(($expression$))" description="" toReformat="true" toShortenFQNames="false">
     <variable name="expression" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="function_with_return" value="function $FUNCNAME$() {&#10;    $default_argument$=${$default_argument_position$:-$default_argument_value$}&#10;    $statement$&#10;    return $return_value$&#10;}" description="Function template" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="function_with_return" value="function $FUNCNAME$() {&#10;    $default_argument$=${$default_argument_position$:-$default_argument_value$}&#10;    $statement$&#10;    return $return_value$&#10;}" description="Function template" toReformat="true" toShortenFQNames="false">
     <variable name="FUNCNAME" expression="" defaultValue="&quot;function_name&quot;" alwaysStopAt="true" />
     <variable name="default_argument" expression="" defaultValue="&quot;argument1&quot;" alwaysStopAt="true" />
     <variable name="default_argument_position" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
@@ -157,14 +157,14 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="function_call_with_return_value" value="$return_value$=$($function$)" description="Function template" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="function_call_with_return_value" value="$return_value$=$($function$)" description="Function template" toReformat="true" toShortenFQNames="false">
     <variable name="return_value" expression="" defaultValue="&quot;return_value&quot;" alwaysStopAt="true" />
     <variable name="function" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="variable_substring" value="${$var$:$start_position$:$length$}" description="if statement" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="variable_substring" value="${$var$:$start_position$:$length$}" description="if statement" toReformat="true" toShortenFQNames="false">
     <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="start_position" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
     <variable name="length" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
@@ -172,59 +172,59 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="string_index" value="index &quot;${$var$}&quot; $sub_string$" description="if statement" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="string_index" value="index &quot;${$var$}&quot; $sub_string$" description="if statement" toReformat="true" toShortenFQNames="false">
     <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="sub_string" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="array_size" value="${#$array_name$}" description="Function template" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="array_size" value="${#$array_name$}" description="Function template" toReformat="true" toShortenFQNames="false">
     <variable name="array_name" expression="" defaultValue="&quot;arr&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="stderr_redirect_to_null" value="2&gt; nul" description="while-loop" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="stderr_redirect_to_null" value="2&gt; nul" description="while-loop" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="std_redirect_to_nul" value="2&gt; nul 1&gt; nul" description="while-loop" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="std_redirect_to_nul" value="2&gt; nul 1&gt; nul" description="while-loop" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="set_initialize_assign_variable" value="$variable_name$=$value$" description="" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="set_initialize_assign_variable" value="$variable_name$=$value$" description="" toReformat="true" toShortenFQNames="false">
     <variable name="variable_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="get_variable" value="\$variable_name" description="" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="get_variable" value="\$variable_name" description="" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="get_command_output" value="$($command$)" description="" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="get_command_output" value="$($command$)" description="" toReformat="true" toShortenFQNames="false">
     <variable name="command" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="get_length_of_arguments" value="$#" description="" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="get_length_of_arguments" value="$#" description="" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="array_" value="${#$array_name$}" description="Function template" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="array_" value="${#$array_name$}" description="Function template" toReformat="true" toShortenFQNames="false">
     <variable name="array_name" expression="" defaultValue="&quot;arr&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if string is empty" value="if [[ -z &quot;$parameter$&quot; ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;else&#10;    $STATEMENT_IF_false$&#10;fi" description="" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="if string is empty" value="if [[ -z &quot;$parameter$&quot; ]]&#10;then&#10;    $STATEMENT_IF_TRUE$&#10;else&#10;    $STATEMENT_IF_false$&#10;fi" description="" toReformat="true" toShortenFQNames="false">
     <variable name="parameter" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="true" />
     <variable name="STATEMENT_IF_TRUE" expression="" defaultValue="&quot;echo \&quot;true\&quot;&quot;" alwaysStopAt="true" />
     <variable name="STATEMENT_IF_false" expression="" defaultValue="" alwaysStopAt="true" />
@@ -232,56 +232,56 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="file_directory_path" value="file_directory_path=$(dirname $0)&#10;$default_cd_command$" description="script_dir_path=$(dirname $0)" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="file_directory_path" value="file_directory_path=$(dirname $0)&#10;$default_cd_command$" description="script_dir_path=$(dirname $0)" toReformat="true" toShortenFQNames="false">
     <variable name="default_cd_command" expression="" defaultValue="&quot;cd $file_directory_path&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="for-var-in-from-pycharm" value="for $LOOPVAR$ in $LOOPITEMS$ ; do&#10;    $END$$SELECTION$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="for-var-in-from-pycharm" value="for $LOOPVAR$ in $LOOPITEMS$ ; do&#10;    $END$$SELECTION$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false">
     <variable name="LOOPVAR" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
     <variable name="LOOPITEMS" expression="" defaultValue="&quot;item1 item2 item3&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="with_probability" value="if [[ &quot;$(shuf -i 1-100 -n 1)&quot; &lt; $probability_in_percent$ ]]&#10;then&#10;    $command$&#10;fi" description="Case pattern with 3 alternatives" toReformat="false" toShortenFQNames="false" deactivated="true">
+  <template name="with_probability" value="if [[ &quot;$(shuf -i 1-100 -n 1)&quot; &lt; $probability_in_percent$ ]]&#10;then&#10;    $command$&#10;fi" description="Case pattern with 3 alternatives" toReformat="false" toShortenFQNames="false">
     <variable name="probability_in_percent" expression="" defaultValue="&quot;5&quot;" alwaysStopAt="true" />
     <variable name="command" expression="" defaultValue="&quot;echo &quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="CD script_dir" value="script_dir_path=$(dirname $0)&#10;cd $script_dir_path" description="script_dir" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="CD script_dir" value="script_dir_path=$(dirname $0)&#10;cd $script_dir_path" description="script_dir" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if_debug" value="DEBUG=1&#10;if [[ $DEBUG == 1 ]]; then&#10;  echo $debug_msg$&#10;fi" description="if statement" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="if_debug" value="DEBUG=1&#10;if [[ $DEBUG == 1 ]]; then&#10;  echo $debug_msg$&#10;fi" description="if statement" toReformat="true" toShortenFQNames="false">
     <variable name="debug_msg" expression="" defaultValue="&quot;\&quot;debug msg\&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if_variable_exists" value="if [[ -z &quot;IS_FOR_SCRIPTIZATION&quot; ]]&#10;then&#10;fi" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="if_variable_exists" value="if [[ -z &quot;IS_FOR_SCRIPTIZATION&quot; ]]&#10;then&#10;fi" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="print" value="$command$&#10;echo &quot;($command$)&quot;&#10;" description="echo the command and execute" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="print" value="$command$&#10;echo &quot;($command$)&quot;&#10;" description="echo the command and execute" toReformat="true" toShortenFQNames="false">
     <variable name="command" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="p" value="echo '**************************************************************************'&#10;echo &quot;$$$value$&quot;&#10;echo '^^($value$)^^'&#10;echo &quot;at:&quot;&#10;echo &quot;$cc$&quot;&#10;echo '**************************************************************************'&#10;" description="echo the command and execute" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="p" value="echo '**************************************************************************'&#10;echo &quot;$$$value$&quot;&#10;echo '^^($value$)^^'&#10;echo &quot;at:&quot;&#10;echo &quot;$cc$&quot;&#10;echo '**************************************************************************'&#10;" description="echo the command and execute" toReformat="true" toShortenFQNames="false">
     <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="cc" expression="" defaultValue="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if uname" value="if [[ &quot;$(uname)&quot; == &quot;Darwin&quot; ]]; then&#10;    # in Mac OS&#10;    $s1$&#10;elif [[ &quot;$(hostname)&quot; == *home-kli02-* ]]; then&#10;    # in ephemeral&#10;    $s2$&#10;elif [[ &quot;$(hostname)&quot; == *.blue.ygrid.yahoo.com ]]; then&#10;    # in the grid&#10;    $s3$&#10;else&#10;    $s4$&#10;fi  &#10; " description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="if uname" value="if [[ &quot;$(uname)&quot; == &quot;Darwin&quot; ]]; then&#10;    # in Mac OS&#10;    $s1$&#10;elif [[ &quot;$(hostname)&quot; == *home-kli02-* ]]; then&#10;    # in ephemeral&#10;    $s2$&#10;elif [[ &quot;$(hostname)&quot; == *.blue.ygrid.yahoo.com ]]; then&#10;    # in the grid&#10;    $s3$&#10;else&#10;    $s4$&#10;fi  &#10; " description="" toReformat="true" toShortenFQNames="true">
     <variable name="s1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="s2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="s3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -290,29 +290,29 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="alias using bash syntax" value="alias $alias$='$cmd$'" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="alias using bash syntax" value="alias $alias$='$cmd$'" description="" toReformat="true" toShortenFQNames="true">
     <variable name="alias" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="cmd" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="dirname" value="dirname" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="dirname" value="dirname" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="basename" value="basename" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="basename" value="basename" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="script directory  safe" value="SCRIPT_DIRECTORY=&quot;$( cd &quot;$(dirname &quot;$0&quot;)&quot; &gt;/dev/null 2&gt;&amp;1 ; pwd -P )&quot;" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="script directory  safe" value="SCRIPT_DIRECTORY=&quot;$( cd &quot;$(dirname &quot;$0&quot;)&quot; &gt;/dev/null 2&gt;&amp;1 ; pwd -P )&quot;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="pawk" value="$result$=$(pawk $argument1$ -p 'l$statement$')" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="pawk" value="$result$=$(pawk $argument1$ -p 'l$statement$')" description="" toReformat="true" toShortenFQNames="true">
     <variable name="result" expression="" defaultValue="&quot;result&quot;" alwaysStopAt="true" />
     <variable name="argument1" expression="" defaultValue="&quot;argument1&quot;" alwaysStopAt="true" />
     <variable name="statement" expression="" defaultValue="&quot;statement&quot;" alwaysStopAt="true" />
@@ -320,13 +320,13 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="return in function" value="echo $result$ " description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="return in function" value="echo $result$ " description="" toReformat="true" toShortenFQNames="true">
     <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="suppress stderr" value="2&gt; /dev/null" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="suppress stderr" value="2&gt; /dev/null" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Django" value="false" />
       <option name="HTML" value="false" />
@@ -337,14 +337,14 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="if none then" value="if test -z $$$msg$&#10;    then&#10;          $msg$=&quot;$stst$&quot;&#10; fi" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="if none then" value="if test -z $$$msg$&#10;    then&#10;          $msg$=&quot;$stst$&quot;&#10; fi" description="" toReformat="true" toShortenFQNames="true">
     <variable name="msg" expression="" defaultValue="&quot;var&quot;" alwaysStopAt="true" />
     <variable name="stst" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="args" value="$@" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="args" value="$@" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
       <option name="CSS" value="true" />
@@ -352,49 +352,49 @@
       <option name="CoffeeScript" value="true" />
     </context>
   </template>
-  <template name="function simple" value="function $FUNCNAME$() {&#10;    $END$$SELECTION$&#10;}" description="Function template" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="function simple" value="function $FUNCNAME$() {&#10;    $END$$SELECTION$&#10;}" description="Function template" toReformat="true" toShortenFQNames="false">
     <variable name="FUNCNAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="call funciton" value="$a$$($pwd$)" description="call function" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="call funciton" value="$a$$($pwd$)" description="call function" toReformat="true" toShortenFQNames="true">
     <variable name="pwd" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="refer to variable" value="&quot;${$aaa$}&quot;" description="refer to single variable" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="refer to variable" value="&quot;${$aaa$}&quot;" description="refer to single variable" toReformat="true" toShortenFQNames="true">
     <variable name="aaa" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="argument to refer to" value="${$1$:-&quot;$default$&quot;}" description="argument for script / function with default value" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="argument to refer to" value="${$1$:-&quot;$default$&quot;}" description="argument for script / function with default value" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
     <variable name="default" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="refer to single variable in string" value="${$aaa$}" description="refer to single variable in string" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="refer to single variable in string" value="${$aaa$}" description="refer to single variable in string" toReformat="true" toShortenFQNames="true">
     <variable name="aaa" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="time" value="time " description="timing a command" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="time" value="time " description="timing a command" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="fzf" value="|  eval &quot;fzf ${FZF_DEFAULT_OPTS}&quot;" description="timing a command" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="fzf" value="|  eval &quot;fzf ${FZF_DEFAULT_OPTS}&quot;" description="timing a command" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="get_file_name_list" value="find $directory$ -type f -name &quot;$name_glob_pattern$&quot;" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="get_file_name_list" value="find $directory$ -type f -name &quot;$name_glob_pattern$&quot;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="directory" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="name_glob_pattern" expression="" defaultValue="&quot;*&quot;" alwaysStopAt="true" />
     <context>
@@ -416,7 +416,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="string literal" value="'$x$'" description="string without accidental variable substitution" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="string literal" value="'$x$'" description="string without accidental variable substitution" toReformat="true" toShortenFQNames="true">
     <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CSS" value="false" />
@@ -437,24 +437,24 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="def" value="function $FUNCNAME$() {&#10;    $statement$&#10;}" description="Function template (using python abbreviation)" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="def" value="function $FUNCNAME$() {&#10;    $statement$&#10;}" description="Function template (using python abbreviation)" toReformat="true" toShortenFQNames="false">
     <variable name="statement" expression="" defaultValue="&quot; $@&quot;" alwaysStopAt="true" />
     <variable name="FUNCNAME" expression="" defaultValue="&quot;function_name&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="directory of current file" value="$(dirname &quot;$0&quot;)" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="directory of current file" value="$(dirname &quot;$0&quot;)" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="number of argumenmts" value="$#" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="number of argumenmts" value="$#" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if elif" value="if [[ $1$ ]]&#10;then&#10;    $2$&#10;elif [[ $3$ ]]&#10;then&#10;    $4$&#10;else&#10;    $5$&#10;fi" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="if elif" value="if [[ $1$ ]]&#10;then&#10;    $2$&#10;elif [[ $3$ ]]&#10;then&#10;    $4$&#10;else&#10;    $5$&#10;fi" description="" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -464,14 +464,14 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if is  file" value="if [[ -f $1$  ]]&#10;then&#10;    $111$&#10;fi" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="if is  file" value="if [[ -f $1$  ]]&#10;then&#10;    $111$&#10;fi" description="" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="111" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="edit" value="$x$$(pawk &quot;$original$&quot; -p &quot;$python_code$&quot;)" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="edit" value="$x$$(pawk &quot;$original$&quot; -p &quot;$python_code$&quot;)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="original" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="python_code" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="x" expression="" defaultValue="&quot;a=&quot;" alwaysStopAt="true" />
@@ -479,71 +479,72 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="is in kubernetes" value="&quot;$(hostname)&quot; == *home-kli02-*" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="is in kubernetes" value="&quot;$(hostname)&quot; == *home-kli02-*" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="is in grid" value="&quot;$(hostname)&quot; == *.yahoo.com" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="is in grid" value="&quot;$(hostname)&quot; == *.yahoo.com" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if None equals" value="$var_to_check$=${$var_to_check$:-&quot;$default_value$&quot;}" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="if None equals" value="$var_to_check$=${$var_to_check$:-&quot;$default_value$&quot;}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var_to_check" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="default_value" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if is directory" value="if [[ -d $1$  ]]&#10;then&#10;    $111$&#10;fi" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="if is directory" value="if [[ -d $1$  ]]&#10;then&#10;    $111$&#10;fi" description="" toReformat="true" toShortenFQNames="true">
     <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="111" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="basename of path" value="$(basename &quot;$x$&quot;)" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="basename of path" value="$(basename &quot;$x$&quot;)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="x" expression="" defaultValue="$0" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="script directory" value="$(realpath $(dirname &quot;$0&quot;))" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="script directory" value="$(realpath $(dirname &quot;$0&quot;))" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="comment out to use python" value="# comment out to use python" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="comment out to use python" value="# comment out to use python" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="main program path" value="&quot;$0&quot;" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="main program path" value="&quot;$0&quot;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="parent diretory of" value="$(dirname &quot;$$$x$&quot;)" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="parent diretory of" value="$(dirname &quot;$$$x$&quot;)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="x" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="main program directory" value="$(dirname &quot;$$$x$&quot;)" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="main program directory" value="$(dirname &quot;$$$x$&quot;)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="x" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="alias" value="unalias $name$  &gt; /dev/null 2&gt;&amp;1&#10;alias origina_$name$=$(which $name$)&#10;alias $name$=$command$" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="alias" value="unalias $name$  &gt; /dev/null 2&gt;&amp;1&#10;$enable_flat$ alias origina_$name$=$(which $name$)&#10;alias $name$=$command$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="enable_flat" expression="" defaultValue="&quot;#&quot; " alwaysStopAt="true" />
     <variable name="command" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if in OS" value="if [[ &quot;$(uname)&quot; == &quot;Darwin&quot; ]]&#10;then&#10;        $ss$&#10;elif [[ $(hostname -s) == *home-kli02-* ]]&#10;then&#10;        $ss1$&#10;elif [[ &quot;$(hostname)&quot; == *.yahoo.com ]]&#10;then&#10;        $ss2$&#10;elif [[ &quot;$(awk -F= '/^NAME/{print $2}' /etc/os-release)&quot; == &quot;\&quot;Ubuntu\&quot;&quot; ]]&#10;then&#10;    $ssx$&#10;else&#10;    $ss3$&#10;fi" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="if in OS" value="if [[ &quot;$(uname)&quot; == &quot;Darwin&quot; ]]&#10;then&#10;        $ss$&#10;elif [[ $(hostname -s) == *home-kli02-* ]]&#10;then&#10;        $ss1$&#10;elif [[ &quot;$(hostname)&quot; == *.yahoo.com ]]&#10;then&#10;        $ss2$&#10;elif [[ &quot;$(awk -F= '/^NAME/{print $2}' /etc/os-release)&quot; == &quot;\&quot;Ubuntu\&quot;&quot; ]]&#10;then&#10;    $ssx$&#10;else&#10;    $ss3$&#10;fi" description="" toReformat="true" toShortenFQNames="true">
     <variable name="ss" expression="" defaultValue="&quot;echo &gt; /dev/null&quot;" alwaysStopAt="true" />
     <variable name="ss1" expression="" defaultValue="&quot;echo &gt; /dev/null&quot;" alwaysStopAt="true" />
     <variable name="ss2" expression="" defaultValue="&quot;echo &gt; /dev/null&quot;" alwaysStopAt="true" />
@@ -553,22 +554,22 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="all arguments as list" value="$@" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="all arguments as list" value="$@" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="all arguments as string" value="$*" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="all arguments as string" value="$*" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="nop" value="echo &gt; /dev/null" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="nop" value="echo &gt; /dev/null" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="print inline" value="echo -n " description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="print inline" value="echo -n " description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -587,30 +588,30 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="fold code" value="function $func$() {&#10;     $stmt$&#10;}&#10;$func$" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="fold code" value="function $func$() {&#10;     $stmt$&#10;}&#10;$func$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="func" expression="" defaultValue="&quot;x&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="cd previous directory" value="local previous_directory=$(pwd)&#10;cd ${previous_directory}" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="cd previous directory" value="local previous_directory=$(pwd)&#10;cd ${previous_directory}" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="for-each-in" value="for $LOOPVAR$ in $LOOPITEMS$ ; do&#10;    $END$$SELECTION$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false" deactivated="true">
+  <template name="for-each-in" value="for $LOOPVAR$ in $LOOPITEMS$ ; do&#10;    $END$$SELECTION$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false">
     <variable name="LOOPVAR" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
     <variable name="LOOPITEMS" expression="" defaultValue="&quot;item1 item2 item3&quot;" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="ifmain" value="if [[ &quot;${BASH_SOURCE[0]}&quot; == &quot;${0}&quot; ]]; then&#10;    $install_RemoteClientByIP$&#10;fi&#10;&#10;" description="" toReformat="false" toShortenFQNames="true" deactivated="true">
+  <template name="ifmain" value="if [[ &quot;${BASH_SOURCE[0]}&quot; == &quot;${0}&quot; ]]; then&#10;    $install_RemoteClientByIP$&#10;fi&#10;&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="install_RemoteClientByIP" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="for open" value="for $variable$ in $space_separated_values$; do&#10;    InPersistentSessionLocalProcess_open pp $file$ --$parameter_name$ ${$variable$}&#10;done" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="for open" value="for $variable$ in $space_separated_values$; do&#10;    InPersistentSessionLocalProcess_open pp $file$ --$parameter_name$ ${$variable$}&#10;done" description="" toReformat="true" toShortenFQNames="true">
     <variable name="file" expression="" defaultValue="&quot;path.py&quot;" alwaysStopAt="true" />
     <variable name="space_separated_values" expression="" defaultValue="&quot;2 3 4 5&quot;" alwaysStopAt="true" />
     <variable name="parameter_name" expression="" defaultValue="&quot;parameter&quot;" alwaysStopAt="true" />
@@ -619,14 +620,14 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="if string equal" value="if [[ ${$s1$} == $s2$ ]]; then&#10;    echo &gt; /dev/null&#10;fi" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="if string equal" value="if [[ ${$s1$} == $s2$ ]]; then&#10;    echo &gt; /dev/null&#10;fi" description="" toReformat="true" toShortenFQNames="true">
     <variable name="s1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="s2" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="suppress stdout stderr" value="&gt;/dev/null 2&gt;&amp;1" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="suppress stdout stderr" value="&gt;/dev/null 2&gt;&amp;1" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Bash" value="false" />
       <option name="CSS" value="false" />
@@ -646,62 +647,12 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="ablate" value="for $variable$ in $range_list$; do&#10;    ipo do_disable_PDB=1 pd $(LocalDirectory_get_ChildrenFilesList_in_shell $(realpath $(dirname &quot;$0&quot;)) .py | head -n 1  ) --n_estimators ${$variable$} --${ablation_subdirectory__parameter_NAME} $ablation_subdirectory$&#10;done" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+  <template name="ablate" value="for $variable$ in $range_list$; do&#10;    ipo do_disable_PDB=1 pd $(LocalDirectory_get_ChildrenFilesList_in_shell $(realpath $(dirname &quot;$0&quot;)) .py | head -n 1  ) --n_estimators ${$variable$} --${ablation_subdirectory__parameter_NAME} $ablation_subdirectory$&#10;done" description="" toReformat="true" toShortenFQNames="true">
     <variable name="range_list" expression="" defaultValue="&quot;3 4 5&quot;" alwaysStopAt="true" />
     <variable name="ablation_subdirectory" expression="date(&quot;Y_MM_d_E_H_m&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="variable" expression="" defaultValue="&quot;v&quot;" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
-  </template>
-  <template name="cas" value="case $value$ in&#10;$pattern$)&#10;  $END$ ;;&#10;esac" description="Case statement" toReformat="false" toShortenFQNames="false" deactivated="true">
-    <variable name="value" expression="" defaultValue="&quot;$x&quot;" alwaysStopAt="true" />
-    <variable name="pattern" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="cap" value="$a$)&#10;  $END$ ;;" description="Case pattern" toReformat="false" toShortenFQNames="false" deactivated="true">
-    <variable name="a" expression="" defaultValue="&quot;$a&quot;" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="cap2" value="$a$|$b$)&#10;  $END$ ;;" description="Case pattern with two alternatives" toReformat="false" toShortenFQNames="false" deactivated="true">
-    <variable name="a" expression="" defaultValue="&quot;$a&quot;" alwaysStopAt="true" />
-    <variable name="b" expression="" defaultValue="&quot;$b&quot;" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="cap3" value="$a$|$b$)&#10;  $END$ ;;" description="Case pattern with 3 alternatives" toReformat="false" toShortenFQNames="false" deactivated="true">
-    <variable name="a" expression="" defaultValue="&quot;$a&quot;" alwaysStopAt="true" />
-    <variable name="b" expression="" defaultValue="&quot;$b&quot;" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="ife" value="if $TEST$; then&#10;    $END$$SELECTION$&#10;else&#10;    $CMD$&#10;fi" description="if-else statement" toReformat="true" toShortenFQNames="false" deactivated="true">
-    <variable name="TEST" expression="" defaultValue="&quot;test&quot;" alwaysStopAt="true" />
-    <variable name="CMD" expression="" defaultValue="&quot;echo&quot;" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="ifee" value="if $TEST$; then&#10;    $END$$SELECTION$&#10;elif $TEST2$; then&#10;    $CMD2$&#10;else&#10;    $CMD3$&#10;fi" description="if-elsif-else statement" toReformat="true" toShortenFQNames="false" deactivated="true">
-    <variable name="TEST" expression="" defaultValue="&quot;test&quot;" alwaysStopAt="true" />
-    <variable name="TEST2" expression="" defaultValue="&quot;test&quot;" alwaysStopAt="true" />
-    <variable name="CMD2" expression="" defaultValue="&quot;echo&quot;" alwaysStopAt="true" />
-    <variable name="CMD3" expression="" defaultValue="&quot;echo&quot;" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="for-index" value="for (( $LOOPVAR$ = $LOOPSTART$; $LOOPVAR$ &lt; $LOOPLIMIT$; ++$LOOPVAR$ )); do&#10;    $END$$SELECTION$&#10;done&#10;" description="C-style &quot;for&quot; loop" toReformat="true" toShortenFQNames="false" deactivated="true">
-    <variable name="LOOPVAR" expression="" defaultValue="&quot;VAR&quot;" alwaysStopAt="true" />
-    <variable name="LOOPSTART" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
-    <variable name="LOOPLIMIT" expression="" defaultValue="&quot;${LOOP_LIMIT}&quot;" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="she" value="#!$ENV$ $BASH$&#10;$END$" description="shebang line" toReformat="false" toShortenFQNames="false" deactivated="true">
-    <variable name="ENV" expression="" defaultValue="&quot;/usr/bin/env&quot;" alwaysStopAt="false" />
-    <variable name="BASH" expression="enum(&quot;bash&quot;,&quot;sh&quot;)" defaultValue="" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="shebin" value="#!/bin/$SHELL$&#10;$END$" description="shebang line /bin" toReformat="false" toShortenFQNames="false" deactivated="true">
-    <variable name="SHELL" expression="enum(&quot;bash&quot;,&quot;sh&quot;)" defaultValue="" alwaysStopAt="true" />
-    <context />
-  </template>
-  <template name="until" value="until $TEST$; do&#10;    $END$$SELECTION$&#10;done" description="until-loop" toReformat="true" toShortenFQNames="false" deactivated="true">
-    <variable name="TEST" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
 </templateSet>
