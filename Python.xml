@@ -768,14 +768,8 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-<<<<<<< Updated upstream
-  <template name="class function class" value="class $function$__Task($HypernymTask$):&#10;    def __init__(&#10;            self,&#10;            $parameters$&#10;    ):&#10;        pass&#10;def __call__(self, *args, **kwargs):&#10;    pass" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="HypernymTask" expression="" defaultValue="" alwaysStopAt="true" />
-=======
   <template name="class function class" value="class $function$__Function_Class:&#10;    def __init__(&#10;            self,&#10;            $parameters$&#10;    ):&#10;        pass&#10;def __call__(self, *args, **kwargs):&#10;    pass" description="" toReformat="true" toShortenFQNames="true">
     <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
->>>>>>> Stashed changes
     <variable name="parameters" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -789,11 +783,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-<<<<<<< Updated upstream
   <template name="a" value="print(&quot;-----------------------------------------------------------------&quot;)&#10;assert $result$ $condition$&#10;print(f'$result$ evaluates to:\n'&#10;      f'{$result$}\n'&#10;      '^^^passed assertion of  ($result$ $condition$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print(&quot;-----------------------------------------------------------------&quot;)   " description="" toReformat="true" toShortenFQNames="true">
-=======
-  <template name="ass" value="print(&quot;-----------------------------------------------------------------&quot;)&#10;assert $result$ $condition$&#10;print(f'$result$ evaluates to:\n'&#10;      f'{$result$}\n'&#10;      '^^^passed assertion of  ($result$ $condition$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print(&quot;-----------------------------------------------------------------&quot;)   " description="" toReformat="true" toShortenFQNames="true">
->>>>>>> Stashed changes
     <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="&quot;is not None&quot;" alwaysStopAt="true" />
     <variable name="cc" expression="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" defaultValue="" alwaysStopAt="true" />
@@ -801,11 +791,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-<<<<<<< Updated upstream
-  <template name="task definition" value="class $name$_Task:&#10;    def __init__(self,&#10;    ):&#10;        # no hyperparameter goes here&#10;        pass&#10;&#10;def __call__(self):&#10;    # non-configurable values goes here&#10;    pass&#10;" description="function class stub" toReformat="true" toShortenFQNames="true">
-=======
   <template name="task definition" value="class $name$_Task:&#10;    def __init__(self,&#10;    ):&#10;        # no arg kwargs in function class&#10;        pass&#10;&#10;def __call__(self, *_args, **_kwargs):&#10;    pass&#10;" description="function class stub" toReformat="true" toShortenFQNames="true">
->>>>>>> Stashed changes
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -814,7 +800,6 @@
   </template>
   <template name="lam" value="lambda $parameter$: $function$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="parameter" expression="" defaultValue="" alwaysStopAt="true" />
-<<<<<<< Updated upstream
     <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -822,8 +807,6 @@
   </template>
   <template name="par" value="lambda $parameter$: $function$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="parameter" expression="" defaultValue="" alwaysStopAt="true" />
-=======
->>>>>>> Stashed changes
     <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -982,7 +965,6 @@
       <option name="XML" value="false" />
     </context>
   </template>
-<<<<<<< Updated upstream
   <template name="t" value="print(&quot;-----------------------------------------------------------------&quot;)&#10;assert $result$ $condition$&#10;print(f'$result$ evaluates to:\n'&#10;      f'{$result$}\n'&#10;      '^^^passed assertion of  ($result$ $condition$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print(&quot;-----------------------------------------------------------------&quot;)   " description="" toReformat="true" toShortenFQNames="true">
     <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="&quot;is not None&quot;" alwaysStopAt="true" />
@@ -991,6 +973,4 @@
       <option name="Python" value="true" />
     </context>
   </template>
-=======
->>>>>>> Stashed changes
 </templateSet>
