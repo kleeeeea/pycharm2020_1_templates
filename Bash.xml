@@ -536,10 +536,10 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="alias" value="unalias $name$  &gt; /dev/null 2&gt;&amp;1&#10;$enable_flat$ alias origina_$name$=$(which $name$)&#10;alias $name$=$command$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="alias" value="unalias $name$  &gt; /dev/null 2&gt;&amp;1&#10;$enable_flat$ alias origina_$name$=$(which $name$)&#10;function $name$() {&#10;            $command$ $@&#10;}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="enable_flat" expression="" defaultValue="&quot;#&quot; " alwaysStopAt="true" />
     <variable name="command" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="enable_flat" expression="" defaultValue="&quot;#&quot; " alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
     </context>
