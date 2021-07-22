@@ -5,15 +5,23 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+<<<<<<< Updated upstream
   <template name="r" value="&#10;from vzmi.mlx.common.runtime_information.OperatingSystem.ConnnectedToDistributedFilesystem.is_class import is_OperatingSystem_ConnnectedToDistributedFilesystem&#10;if not is_OperatingSystem_ConnnectedToDistributedFilesystem():&#10;        return" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
     </context>
   </template>  <template name="get basename of file" value="LocalPath_get_BasenameWithoutExtension(__file__)" description="" toReformat="true" toShortenFQNames="true">
+=======
+  <template name="get basename of file" value="LocalPath_get_BasenameWithoutExtension(__file__)" description="" toReformat="true" toShortenFQNames="true">
+>>>>>>> Stashed changes
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
     </context>
   </template>
+<<<<<<< Updated upstream
 </templateSet>
+=======
+</templateSet>
+>>>>>>> Stashed changes
