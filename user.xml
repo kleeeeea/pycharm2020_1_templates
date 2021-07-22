@@ -47,6 +47,7 @@
   </template>
   <template name="ImportableLibraryAttribute_to_Object" value="if isinstance($obj$, str):&#10;        from pyramids.common.runtime_information.SourceCodeInterpreter._components.SourceCodePaths.ImportedLibraries._components.ImportableLibrary._components.ImportableLibraryAttribute.io_ops.export_op import ImportableLibraryAttribute_to_Object&#10;        $obj$ = ImportableLibraryAttribute_to_Object($obj$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="r" value="&#10;from vzmi.mlx.common.runtime_information.OperatingSystem.ConnnectedToDistributedFilesystem.is_class import is_OperatingSystem_ConnnectedToDistributedFilesystem&#10;if not is_OperatingSystem_ConnnectedToDistributedFilesystem():&#10;        return" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
@@ -55,12 +56,13 @@
   <template name="get basename of file" value="LocalPath_get_BasenameWithoutExtension(__file__)" description="" toReformat="true" toShortenFQNames="true">
   </template>
   <template name="self = AttrDict" value="from vzmi.pyramids.common.Variable.LocalGenericContainer.HashBasedLocalGenericContainer.Dictionary.Attrdict import AttrDict&#10;self = AttrDict()" description="" toReformat="true" toShortenFQNames="true">
+  </template>
+  <template name="get basename of file" value="LocalPath_get_BasenameWithoutExtension(__file__)" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
     </context>
   </template>
-</templateSet>
   <template name="try excetp importerror" value="try:&#10;        $stmt$&#10;except ImportError as e:&#10;        from vzmi.pyramids.software_engineering.viewing.Logger.log_op import Logger_log&#10;        Logger_log(e)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
