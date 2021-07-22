@@ -837,38 +837,6 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="par" value="lambda $parameter$: $function$" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="parameter" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-      <option name="Python_Class" value="false" />
-    </context>
-  </template>
-  <template name="apply function inplace" value="$variable$=$func$($variable$)" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="func" expression="" defaultValue="&quot;to_Hashable&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-  <template name="asdfasdf" value="asdf" description="" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-  <template name="bin env python" value="#!/usr/bin/env python" description="" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-      <option name="Python_Class" value="false" />
-    </context>
-  </template>
-  <template name="breakpoint" value="from vzmi.mlx.software_engineering.modifying.Breakpoint.create import create_Breakpoint&#10;create_Breakpoint()" description="" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="Python" value="true" />
-      <option name="Python_Class" value="false" />
-    </context>
-  </template>
   <template name="declare variable type" value="assert isinstance($name$, $type$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
