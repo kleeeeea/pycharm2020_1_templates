@@ -152,7 +152,7 @@
     </context>
   </template>
   <template name="if main" value="if __name__ == '__main__':&#10;    from vzmi.mlx_dynamically_typed.common.runtime_information.SourceCodeInterpreter.Base._components.CommandlineArgument.io_op.to_FunctionArguments._alias.do_and_run import do_CommandlineArgument_to_FunctionArguments_and_run&#10;    do_CommandlineArgument_to_FunctionArguments_and_run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
-    <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="&quot;test&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -783,7 +783,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="a" value="print(&quot;-----------------------------------------------------------------&quot;)&#10;assert $result$ $condition$&#10;print(f'$result$ evaluates to:\n'&#10;      f'{$result$}\n'&#10;      '^^^passed assertion of  ($result$ $condition$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print(&quot;-----------------------------------------------------------------&quot;)   " description="" toReformat="true" toShortenFQNames="true">
+  <template name="a" value="print(&quot;-----------------------------------------------------------------&quot;)&#10;assert $result$ $condition$&#10;print(f'$result$ evaluates to:\n'&#10;      f'{$result$}\n'&#10;      '^^^passed assertion of  ($result$ $condition$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print(&quot;-----------------------------------------------------------------&quot;)   " description="" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="&quot;is not None&quot;" alwaysStopAt="true" />
     <variable name="cc" expression="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" defaultValue="" alwaysStopAt="true" />

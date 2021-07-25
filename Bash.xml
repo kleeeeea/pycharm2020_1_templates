@@ -605,7 +605,7 @@
     <variable name="LOOPITEMS" expression="" defaultValue="&quot;item1 item2 item3&quot;" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="ifmain" value="if [[ &quot;${BASH_SOURCE[0]}&quot; == &quot;${0}&quot; ]]; then&#10;    $install_RemoteClientByIP$&#10;fi&#10;&#10;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="run if main" value="if [[ &quot;${BASH_SOURCE[0]}&quot; == &quot;${0}&quot; ]]; then&#10;    $install_RemoteClientByIP$&#10;fi&#10;&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="install_RemoteClientByIP" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Bash" value="true" />
