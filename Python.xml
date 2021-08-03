@@ -241,7 +241,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="sc" value="&quot;&quot;&quot;&#10;Submit PySpark via command line,&#10;​&#10;Run at gateway:&#10;​&#10;```&#10;&#10;$submit_command$&#10;```&#10;​&#10;&quot;&quot;&quot;&#10;&#10;&#10;&#10;from pyspark.sql import SparkSession&#10;&#10;spark = SparkSession \&#10;    .builder \&#10;    .appName(&quot;Spark Application&quot;) \&#10;    .enableHiveSupport() \&#10;    .getOrCreate()&#10;&#10;sc = spark.sparkContext&#10;&#10;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="sc creation" value="&quot;&quot;&quot;&#10;Submit PySpark via command line,&#10;​&#10;Run at gateway:&#10;​&#10;```&#10;&#10;$submit_command$&#10;```&#10;​&#10;&quot;&quot;&quot;&#10;&#10;&#10;&#10;from pyspark.sql import SparkSession&#10;&#10;spark = SparkSession \&#10;    .builder \&#10;    .appName(&quot;Spark Application&quot;) \&#10;    .enableHiveSupport() \&#10;    .getOrCreate()&#10;&#10;sc = spark.sparkContext&#10;&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="submit_command" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -939,6 +939,12 @@
     <variable name="cc" expression="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sc" value="if 'sc' in locals():&#10;    # support jupyter execution&#10;    sc = locals()['sc']&#10;else:&#10;&#10;    from pyspark.conf import SparkConf&#10;    from pyspark.context import SparkContext&#10;    import os&#10;&#10;    sc = SparkContext(conf=SparkConf().setAppName(os.path.basename(__file__)))" description="spark context" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
     </context>
   </template>
 </templateSet>
