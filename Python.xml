@@ -941,7 +941,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="sc" value="if 'sc' in locals():&#10;    # support jupyter execution&#10;    sc = locals()['sc']&#10;else:&#10;&#10;    from pyspark.conf import SparkConf&#10;    from pyspark.context import SparkContext&#10;    import os&#10;&#10;    sc = SparkContext(conf=SparkConf().setAppName(os.path.basename(__file__)))" description="spark context" toReformat="true" toShortenFQNames="true">
+  <template name="sc" value="if 'sc' in locals():&#10;    # support jupyter execution&#10;    from IPython.core.display import display&#10;    sc = locals()['sc']&#10;    display(sc)&#10;else:&#10;&#10;    from pyspark.conf import SparkConf&#10;    from pyspark.context import SparkContext&#10;    import os&#10;&#10;    sc = SparkContext(conf=SparkConf().setAppName(os.path.basename(__file__)))" description="spark context" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
