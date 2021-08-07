@@ -1,0 +1,16 @@
+<templateSet group="user">
+  <template name="lt" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByGrid.TwoDimensionalGrid.AsUndirectedGraph.Rectangular._OfBaseTopology._OfBaseElements.OfBaseValueDistribution.io_ops.to_Text import TwoDimensionalGrid_to_Text&#10;Logger_log(TwoDimensionalGrid_to_Text($ll$))" toReformat="true" toShortenFQNames="true">
+    <variable name="ll" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="lll" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.LinearAccessContainer.LinkedList._OfBaseTopology._OfBaseNodeClass._OfBaseValueDistribution._bundle import LinkedList&#10;Logger_log(LinkedList($n1$))" toReformat="true" toShortenFQNames="true">
+    <variable name="n1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+</templateSet>
