@@ -11,4 +11,11 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="lb" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;    from non_vzmi.competitive.Graph.DefinedByParentChildrenEdge.BinaryTree._OfBaseNodePointerType._OfBaseTopology._OfBaseNodeEdgeClass._OfBaseValueDistribution._bundle import BinaryTreeMLX&#10;    Logger_log(BinaryTreeMLX($root$))" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="root" expression="" defaultValue="&quot;root&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
 </templateSet>
