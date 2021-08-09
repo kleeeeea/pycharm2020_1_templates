@@ -13,4 +13,10 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="next iter" value="next(iter($x$))" toReformat="true" toShortenFQNames="true">
+    <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python_Class" value="true" />
+    </context>
+  </template>
 </templateSet>
