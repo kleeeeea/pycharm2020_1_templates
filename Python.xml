@@ -91,7 +91,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="for" value="for $i$ in $var$:&#10;&#9;$pass$" description="" toReformat="false" toShortenFQNames="true">
+  <template name="for basic" value="for $i$ in $var$:&#10;&#9;$pass$" description="" toReformat="false" toShortenFQNames="true">
     <variable name="i" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="pass" expression="" defaultValue="" alwaysStopAt="true" />
@@ -961,6 +961,15 @@
   </template>
   <template name="lb" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;    from non_vzmi.competitive.Graph.DefinedByParentChildrenEdge.BinaryTree._OfBaseNodePointerType._OfBaseTopology._OfBaseNodeEdgeClass._OfBaseValueDistribution._bundle import BinaryTreeMLX&#10;    Logger_log(BinaryTreeMLX($root$))" description="" toReformat="true" toShortenFQNames="true">
     <variable name="root" expression="" defaultValue="&quot;root&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="for" value="for i, ($el$) in enumerate($x$):&#10;    $pass$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="el" expression="" defaultValue="&quot;el&quot;" alwaysStopAt="true" />
+    <variable name="pass" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />

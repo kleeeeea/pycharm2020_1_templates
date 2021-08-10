@@ -19,4 +19,9 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
+  <template name="str repr self" value="def __str__(self):&#10;    return f'$x&#10;    $'&#10;&#10;def __repr__(self):&#10;    return self.__str__()" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
