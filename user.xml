@@ -3,7 +3,6 @@
     <variable name="ll" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
-      <option name="Python_Class" value="false" />
     </context>
   </template>
   <template name="lll" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.LinearAccessContainer.LinkedList._OfBaseTopology._OfBaseNodeClass._OfBaseValueDistribution._bundle import LinkedList&#10;Logger_log(LinkedList($n1$))" description="" toReformat="true" toShortenFQNames="true">
