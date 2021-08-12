@@ -783,7 +783,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="a" value="print(&quot;-----------------------------------------------------------------&quot;)&#10;r = $result$&#10;assert r $condition$&#10;print(f'$result$ evaluates to:\n'&#10;      f'{r}\n'&#10;      '^^^passed assertion of  ($result$ $condition$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print(&quot;-----------------------------------------------------------------&quot;)   " description="" toReformat="true" toShortenFQNames="true">
+  <template name="a" value="print(&quot;-----------------------------------------------------------------&quot;)&#10;r = $result$&#10;assert r $condition$&#10;print(f'$result$ evaluates to:\n'&#10;      f'{r}\n'&#10;      '^^^passed assertion of  ($result$ $condition$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print('Tests passed!')&#10;print(&quot;-----------------------------------------------------------------&quot;)&#10;   " description="" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="&quot;is not None&quot;" alwaysStopAt="true" />
     <variable name="cc" expression="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" defaultValue="" alwaysStopAt="true" />
@@ -959,10 +959,11 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="lb" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByParentChildrenEdge.BinaryTree._OfBaseNodePointerType._OfBaseTopology._OfBaseNodeEdgeClass._OfBaseValueDistribution._bundle import BinaryTreeMLX&#10;Logger_log(BinaryTreeMLX($root$))" description="" toReformat="true" toShortenFQNames="true">
+  <template name="lb" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;    from non_vzmi.competitive.Graph.DefinedByParentChildrenEdge.BinaryTree._OfBaseNodePointerType._OfBaseTopology._OfBaseNodeEdgeClass._OfBaseValueDistribution._bundle import BinaryTreeMLX&#10;    Logger_log(BinaryTreeMLX($root$))" description="" toReformat="true" toShortenFQNames="true">
     <variable name="root" expression="" defaultValue="&quot;root&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
     </context>
   </template>
   <template name="for" value="for i, ($el$) in enumerate($x$):&#10;    $pass$" description="" toReformat="true" toShortenFQNames="true">
@@ -978,6 +979,7 @@
     <variable name="n1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
     </context>
   </template>
   <template name="lt" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByGrid.TwoDimensionalGrid.AsUndirectedGraph.Rectangular._OfBaseTopology._OfBaseElements.OfBaseValueDistribution.io_ops.to_Text import TwoDimensionalGrid_to_Text&#10;Logger_log(TwoDimensionalGrid_to_Text($ll$))" description="" toReformat="true" toShortenFQNames="true">
@@ -989,10 +991,11 @@
   <template name="next iter" value="next(iter($x$))" description="" toReformat="true" toShortenFQNames="true">
     <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="Python" value="true" />
+      <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="str repr self" value="def __str__(self):&#10;    return f'$x&#10;    $'&#10;&#10;def __repr__(self):&#10;    return self.__str__()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="str repr self" value="def __str__(self):&#10;    return f'$x$'&#10;&#10;def __repr__(self):&#10;    return self.__str__()" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
