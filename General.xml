@@ -5,7 +5,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="mark down quote" value="```$code$```" description="" toReformat="true" toShortenFQNames="true">
+  <template name="mark down quote" value="```$code$```" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OTHER" value="true" />
