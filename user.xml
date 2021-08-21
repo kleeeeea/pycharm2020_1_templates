@@ -1,5 +1,5 @@
 <templateSet group="user">
-  <template name="else  raise NotImplementedError" value="else:&#10;            raise NotImplementedError" toReformat="true" toShortenFQNames="true">
+  <template name="else  raise NotImplementedError" value="else:&#10;            raise NotImplementedError" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
