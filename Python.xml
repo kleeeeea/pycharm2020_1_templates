@@ -541,7 +541,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="script directory" value="f&quot;{os.path.dirname(__file__)}/$x$&quot;" description="" toReformat="true" toShortenFQNames="true">
+  <template name="script directory" value="os.path.join(f&quot;{os.path.dirname(os.path.abspath(__file__))}&quot;, '$x$')" description="" toReformat="true" toShortenFQNames="true">
     <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
