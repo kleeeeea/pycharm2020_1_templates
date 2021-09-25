@@ -541,8 +541,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="script directory" value="os.path.join(f&quot;{os.path.dirname(os.path.abspath(__file__))}&quot;, '$x$')" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="script directory" value="import os&#10;$varname$ = os.path.join(f&quot;{os.path.dirname(os.path.abspath(__file__))}&quot;, '$relpath$')" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="relpath" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="varname" expression="" defaultValue="&quot;p&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
