@@ -17,4 +17,22 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="google" value="# google" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="amazon" value="# amazon" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="facebook" value="# facebook" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
 </templateSet>
