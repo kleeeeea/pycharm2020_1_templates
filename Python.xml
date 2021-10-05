@@ -761,14 +761,6 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="ablate" value="for $variable$ in $range_list$; do&#10;    ipo do_disable_PDB=1 pd $(LocalDirectory_get_ChildrenFilesList_in_shell $(realpath $(dirname &quot;$0&quot;)) .py | head -n 1  ) --n_estimators ${$variable$} --${ablation_subdirectory__parameter_NAME} $ablation_subdirectory$&#10;done" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="range_list" expression="" defaultValue="&quot;3 4 5&quot;" alwaysStopAt="true" />
-    <variable name="ablation_subdirectory" expression="date(&quot;Y_MM_d_E_H_m&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="variable" expression="" defaultValue="&quot;v&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="Bash" value="true" />
-    </context>
-  </template>
   <template name="class function class" value="class $function$__Function_Class:&#10;    def __init__(&#10;            self,&#10;            $parameters$&#10;    ):&#10;        pass&#10;def __call__(self, *args, **kwargs):&#10;    pass" description="" toReformat="true" toShortenFQNames="true">
     <variable name="function" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="parameters" expression="" defaultValue="" alwaysStopAt="true" />
