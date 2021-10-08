@@ -543,7 +543,7 @@
   </template>
   <template name="script directory" value="import os&#10;$varname$ = os.path.join(f&quot;{os.path.dirname(os.path.abspath(__file__))}&quot;, '$relpath$')" description="" toReformat="true" toShortenFQNames="true">
     <variable name="relpath" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="varname" expression="" defaultValue="&quot;p&quot;" alwaysStopAt="true" />
+    <variable name="varname" expression="" defaultValue="&quot;script_directory&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
