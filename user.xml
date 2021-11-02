@@ -35,4 +35,10 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="figure init" value="from vzmi.mlx.user_interface.Matplotlib.Base._components.FigureSession.initialize import FigureSession_initialize&#10;&#10;FigureSession_initialize()" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
 </templateSet>
