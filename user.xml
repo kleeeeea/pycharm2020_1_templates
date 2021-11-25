@@ -41,4 +41,15 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
+  <template name="begin figure" value="\begin{figure$figure_size_notation$}&#10;\centering&#10;\includegraphics[width=$point5$\textwidth]{fig/$path$.png}&#10;\caption{$caption$}&#10;\label{fig-$path$}&#10;\vspace{$minus_10$pt}&#10;\end{figure$figure_size_notation$}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="caption" expression="" defaultValue="path" alwaysStopAt="true" />
+    <variable name="point5" expression="" defaultValue="&quot;.5&quot;" alwaysStopAt="true" />
+    <variable name="minus_10" expression="" defaultValue="&quot;-10&quot;" alwaysStopAt="true" />
+    <variable name="figure_size_notation" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LATEX" value="true" />
+      <option name="LATEX_MATH" value="false" />
+    </context>
+  </template>
 </templateSet>

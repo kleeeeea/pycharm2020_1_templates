@@ -1,0 +1,8 @@
+<templateSet group="surround">
+  <template name="D" value="$$$SELECTION$$$" description="Surround with $$" toReformat="false" toShortenFQNames="false">
+    <context />
+  </template>
+  <template name="O" value="[$SELECTION$]" description="Surround with []" toReformat="false" toShortenFQNames="false">
+    <context />
+  </template>
+</templateSet>
