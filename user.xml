@@ -52,7 +52,7 @@
       <option name="LATEX_MATH" value="false" />
     </context>
   </template>
-  <template name="plt savefig" value="from matplotlib import pyplot; pyplot.savefig('1.png')" toReformat="false" toShortenFQNames="true">
+  <template name="plt savefig" value="from matplotlib import pyplot; pyplot.savefig('1.png')" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
