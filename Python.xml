@@ -684,8 +684,11 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="log" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log($m1$)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="log" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log('$condition_message$', $m1$, '$result_message$with result', $m2$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="m2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="condition_message" expression="" defaultValue="&quot;done for: &quot;" alwaysStopAt="true" />
+    <variable name="result_message" expression="" defaultValue="&quot;with result: &quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -956,7 +959,6 @@
     <variable name="r" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
-      <option name="Python_Class" value="false" />
     </context>
   </template>
   <template name="for" value="for i, ($el$) in enumerate($x$):&#10;    $pass$" description="" toReformat="true" toShortenFQNames="true">
@@ -987,7 +989,7 @@
       <option name="Python_Class" value="true" />
     </context>
   </template>
-  <template name="str repr self" value="def __str__(self):&#10;    return f'$x$'&#10;&#10;def __repr__(self):&#10;    return self.__str__()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="def str repr self" value="def __str__(self):&#10;    return f'$x$'&#10;&#10;def __repr__(self):&#10;    return self.__str__()" description="" toReformat="true" toShortenFQNames="true">
     <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
