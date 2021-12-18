@@ -684,11 +684,11 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="log" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log('$condition_message$', $m1$, '$result_message$with result', $m2$)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="log" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log('$condition_message$', $m1$, '$result_message$', $m2$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="m2" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="condition_message" expression="" defaultValue="&quot;done for: &quot;" alwaysStopAt="true" />
-    <variable name="result_message" expression="" defaultValue="&quot;with result: &quot;" alwaysStopAt="true" />
+    <variable name="condition_message" expression="" defaultValue="&quot;done with: &quot;" alwaysStopAt="true" />
+    <variable name="result_message" expression="" defaultValue=" &quot;result &quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -977,7 +977,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="lt" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByGrid.TwoDimensionalGrid.AsUndirectedGraph.Rectangular._OfBaseTopology._OfBaseElements.OfBaseValueDistribution.io_ops.to_Text import TwoDimensionalGrid_to_Text&#10;Logger_log(TwoDimensionalGrid_to_Text($ll$))" description="" toReformat="true" toShortenFQNames="true">
+  <template name="lt" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByGrid.TwoDimensionalGrid.AsUndirectedGraph.Rectangular._OfBaseTopology._OfBaseElements._OfBaseValueDistribution.io_ops.to_Text import TwoDimensionalGrid_to_Text&#10;Logger_log(TwoDimensionalGrid_to_Text($ll$))" description="" toReformat="true" toShortenFQNames="true">
     <variable name="ll" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
