@@ -955,7 +955,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="lb" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByParentChildrenEdge.BinaryTree_._OfBaseNodePointerType._OfBaseTopology._OfBaseNodeEdgeClass._OfBaseValueDistribution._bundle import BinaryTree&#10;Logger_log(BinaryTree($r$))&#10;" description="" toReformat="true" toShortenFQNames="true">
+  <template name="lb" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByParentChildrenEdge.BinaryTree_._OfBaseNodePointerType._OfBaseShape._OfBaseNodeEdgeClass._OfBaseValueDistribution._bundle import BinaryTree&#10;Logger_log(BinaryTree($r$))&#10;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="r" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -976,7 +976,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="lt" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByGrid.TwoDimensionalGrid.Base.Rectangular._OfBaseTopology._OfBaseElements._OfBaseValueDistribution.io_ops.to_Text import TwoDimensionalGrid_to_Text&#10;Logger_log(TwoDimensionalGrid_to_Text($ll$))" description="" toReformat="true" toShortenFQNames="true">
+  <template name="lt" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByGrid.TwoDimensionalGrid.Base.Rectangular._OfBaseTopology._OfBaseElements._OfBaseValueDistribution.io_ops.to_Text import TwoDimensionalGrid_to_Text&#10;Logger_log('done with: ', TwoDimensionalGrid_to_Text($ll$))&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="ll" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
