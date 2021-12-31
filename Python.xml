@@ -151,7 +151,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="if main" value="if __name__ == '__main__':&#10;    from vzmi.dynamically_typed_mlx.common.runtime_information.SourceCodeInterpreter.Base._components.CommandlineArgument.io_op.to_FunctionArguments._alias.do_and_run import do_CommandlineArgument_to_FunctionArguments_and_run&#10;    do_CommandlineArgument_to_FunctionArguments_and_run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
+  <template name="if main" value="if __name__ == '__main__':&#10;    from vzmi.dynamically_typed_mlx.runtime_information.SourceCodeInterpreter.Base._components.CommandlineArgument.io_op.to_FunctionArguments._alias.do_and_run import do_CommandlineArgument_to_FunctionArguments_and_run&#10;    do_CommandlineArgument_to_FunctionArguments_and_run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
     <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="&quot;test&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
