@@ -684,7 +684,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="log" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;Logger_log('$condition_message$', $m1$, '$result_message$', $m2$)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="log" value="from vzmi.mlx.software_engineering.BehaviorViewer.Logger.log_op import Logger_log&#10;Logger_log('$condition_message$', $m1$, '$result_message$', $m2$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="m2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition_message" expression="" defaultValue="&quot;done with: &quot;" alwaysStopAt="true" />
