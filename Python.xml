@@ -951,7 +951,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="lb" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByParentChildrenEdge.BinaryTree_._OfBaseNodePointerType._OfBaseShape._OfBaseNodeEdgeClass._OfBaseValueDistribution._bundle import BinaryTree&#10;Logger_log('done with',BinaryTree($r$))&#10;" description="" toReformat="true" toShortenFQNames="true">
+  <template name="lb" value="from vzmi.mlx.software_engineering.BehaviorViewer.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByParentChildrenEdge.BinaryTree_._OfBaseNodePointerType._OfBaseShape._OfBaseNodeEdgeClass._OfBaseValueDistribution._bundle import BinaryTree&#10;Logger_log('done with',BinaryTree($r$))&#10;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="r" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -966,14 +966,14 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="lll" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.LinearAccessContainer.LinkedList_._OfBaseTopology._OfBaseNodeClass._OfBaseValueDistribution._components.Node.Base.io_ops.export_ops.to_Text import LinkedList_Node_to_Text&#10;Logger_log(&quot;$condition_message$&quot;,LinkedList_Node_to_Text($n1$))" description="" toReformat="true" toShortenFQNames="true">
+  <template name="lll" value="from vzmi.mlx.software_engineering.BehaviorViewer.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.LinearAccessContainer.LinkedList_._OfBaseTopology._OfBaseNodeClass._OfBaseValueDistribution._components.Node.Base.io_ops.export_ops.to_Text import LinkedList_Node_to_Text&#10;Logger_log(&quot;$condition_message$&quot;,LinkedList_Node_to_Text($n1$))" description="" toReformat="true" toShortenFQNames="true">
     <variable name="condition_message" expression="" defaultValue="&quot;done with: &quot;" alwaysStopAt="true" />
     <variable name="n1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="lt" value="from vzmi.mlx.software_engineering.viewing.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByGrid.TwoDimensionalGrid.Base.Rectangular._OfBaseTopology._OfBaseElements._OfBaseValueDistribution.io_ops.to_Text import TwoDimensionalGrid_to_Text&#10;Logger_log('$condition_message$', TwoDimensionalGrid_to_Text($ll$))&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
+  <template name="lt" value="from vzmi.mlx.softwarfrom vzmi.mlx.software_engineering.BehaviorViewer.Logger.log_op import Logger_log&#10;from non_vzmi.competitive.Graph.DefinedByGrid.TwoDimensionalGrid.Base.Rectangular._OfBaseTopology._OfBaseElements._OfBaseValueDistribution.io_ops.to_Text import TwoDimensionalGrid_to_Text&#10;Logger_log('$condition_message$', TwoDimensionalGrid_to_Text($ll$))&#10;&#10;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="condition_message" expression="" defaultValue="&quot;done with: &quot;" alwaysStopAt="true" />
     <variable name="ll" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
