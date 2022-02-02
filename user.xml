@@ -57,4 +57,10 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="al" value="assert .6 &lt; $v$ &lt; 1&#10;Logger_log('done with: ', $v$)" toReformat="true" toShortenFQNames="true">
+    <variable name="v" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
