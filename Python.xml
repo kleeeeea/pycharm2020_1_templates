@@ -788,7 +788,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="task definition" value="class $name$_Task:&#10;    def __init__(self,&#10;    ):&#10;        # no arg kwargs in function class&#10;        pass&#10;&#10;def __call__(self, $args$):&#10;    pass&#10;" description="function class stub" toReformat="true" toShortenFQNames="true">
+  <template name="task class definition" value="class $name$_TaskClass:&#10;    def __init__(self,&#10;    ):&#10;        # no arg kwargs in function class&#10;        pass&#10;&#10;def __call__(self, $args$):&#10;    pass&#10;" description="function class stub" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
