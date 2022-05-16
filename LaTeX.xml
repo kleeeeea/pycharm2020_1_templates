@@ -1,5 +1,4 @@
 <templateSet group="LaTeX">
-<<<<<<< HEAD
   <template name="fig" value="\begin{figure}&#10;    \centering&#10;    \includegraphics{$FIGURE$}&#10;    \caption{$CAPTION$}&#10;    \label{fig:$LABEL$}&#10;\end{figure}&#10;$END$" description="Figure environment" toReformat="true" toShortenFQNames="true">
     <variable name="FIGURE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CAPTION" expression="" defaultValue="" alwaysStopAt="true" />
@@ -27,7 +26,6 @@
     <variable name="FROM" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TO" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
-=======
   <template name="if is defined" value="\ifdefined\$A$ $c1$\else $c2$\fi" description="" toReformat="true" toShortenFQNames="true">
     <variable name="A" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="c1" expression="" defaultValue="" alwaysStopAt="true" />
@@ -44,6 +42,5 @@
       <option name="LATEX" value="true" />
       <option name="LATEX_MATH" value="false" />
     </context>
->>>>>>> ee399d0f9cad7c3dfb05518eaf2ff42404d7dfa5
   </template>
 </templateSet>
