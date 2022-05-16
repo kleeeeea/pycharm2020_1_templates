@@ -151,7 +151,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="if main" value="if __name__ == '__main__':&#10;    from vzmi.dynamically_typed_mlx.runtime_information.SourceCodeInterpreter.Base._components.CommandlineArgument.io_op.to_FunctionArguments._alias.do_and_run import do_CommandlineArgument_to_FunctionArguments_and_run&#10;    do_CommandlineArgument_to_FunctionArguments_and_run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
+  <template name="if main" value="if __name__ == '__main__':&#10;    from libs.vzmi.dynamically_typed_mlx.runtime_information.SourceCodeInterpreter.Base._components.CommandlineArgument.io_op.to_FunctionArguments._alias.do_and_run import do_CommandlineArgument_to_FunctionArguments_and_run&#10;    do_CommandlineArgument_to_FunctionArguments_and_run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
     <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="&quot;test&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -458,7 +458,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="spark equals get or create spark" value="from vzmi.mlx.common.Variable.DistributedGenericContainer.Base._backends.SparkSession._interface import create_SparkSession&#10;spark = create_SparkSession()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="spark equals get or create spark" value="    from libs.vzmi.mlx.distributed_common.Variable.GenericContainer.Base._backends.SparkSession._bundle import get_or_create_SparkSession&#10;    spark = get_or_create_SparkSession()" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -559,7 +559,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="get spark" value="from vzmi.mlx.common.data_structures_operations.distributed_data_types._low_level.spark_session._interface import get__current_spark_session&#10;spark = get__current_spark_session()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="get spark" value="    from libs.vzmi.mlx.distributed_common.Variable.GenericContainer.Base._backends.SparkSession._bundle import get_or_create_SparkSession&#10;    spark = get_or_create_SparkSession()" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
@@ -685,7 +685,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="log" value="from vzmi.mlx.software_engineering.BehaviorViewer.Logger.log_op import Logger_log&#10;Logger_log('$condition_message$', $m1$, '$result_message$', $m2$)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="log" value="from libs.vzmi.mlx.software_engineering.BehaviorViewing.Log.create import create_Log&#10;create_Log('$condition_message$', $m1$, '$result_message$', $m2$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="m2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition_message" expression="" defaultValue="&quot;done with: &quot;" alwaysStopAt="true" />
@@ -788,7 +788,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="task class definition" value="class $name$_TaskClass:&#10;    def __init__(self,&#10;    ):&#10;        # no arg kwargs in function class&#10;        pass&#10;&#10;def __call__(self, $args$):&#10;    pass&#10;" description="function class stub" toReformat="true" toShortenFQNames="true">
+  <template name="callable class definition" value="class $name$_CallableClass:&#10;    def __init__(self,&#10;    ):&#10;        # no arg kwargs in function class&#10;        pass&#10;    &#10;    def __call__(self, $args$):&#10;        pass&#10;" description="function class stub" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -998,6 +998,12 @@
     <context>
       <option name="Python" value="true" />
       <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="str repr" value="def __str__(self):&#10;    return f'$x$'&#10;&#10;def __repr__(self):&#10;    return self.__str__()" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
     </context>
   </template>
 </templateSet>

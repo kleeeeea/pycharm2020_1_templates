@@ -170,7 +170,6 @@
     <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="SQL_STATEMENT" value="true" />
-      <option name="SQL_STATEMENT_HIVE" value="true" />
     </context>
   </template>
   <template name="sel" value="select * from $table$$END$;" description="select all rows from a table" toReformat="true" toShortenFQNames="false" deactivated="true">

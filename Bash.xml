@@ -122,7 +122,6 @@
     <variable name="initial_condition" expression="" defaultValue="&quot;counter=1&quot;" alwaysStopAt="true" />
     <variable name="TEST" expression="" defaultValue="&quot;$counter -le 10&quot;" alwaysStopAt="true" />
     <variable name="ENDSELECTION" expression="" defaultValue="&quot;echo $counter; ((counter++))&quot;" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="pass" value="echo &gt; /dev/null" description="Function template" toReformat="true" toShortenFQNames="false">
     <context>
@@ -133,7 +132,6 @@
     <variable name="command" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="pattern_string" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="STATEMENT_IF_TRUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="expression" value="expr " description="" toReformat="true" toShortenFQNames="false">
     <context>
@@ -604,7 +602,6 @@
   <template name="for-each-in" value="for $LOOPVAR$ in $LOOPITEMS$ ; do&#10;    $END$$SELECTION$&#10;done&#10;" description="&quot;For each in set&quot; loop" toReformat="true" toShortenFQNames="false">
     <variable name="LOOPVAR" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
     <variable name="LOOPITEMS" expression="" defaultValue="&quot;item1 item2 item3&quot;" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="run if main" value="if [[ &quot;${BASH_SOURCE[0]}&quot; == &quot;${0}&quot; ]]; then&#10;    $install_RemoteClientByIP$&#10;fi&#10;&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="install_RemoteClientByIP" expression="" defaultValue="" alwaysStopAt="true" />
