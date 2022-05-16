@@ -151,7 +151,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="if main" value="if __name__ == '__main__':&#10;    from vzmi.dynamically_typed_mlx.runtime_information.SourceCodeInterpreter.Base._components.CommandlineArgument.io_op.to_FunctionArguments._alias.do_and_run import do_CommandlineArgument_to_FunctionArguments_and_run&#10;    do_CommandlineArgument_to_FunctionArguments_and_run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
+  <template name="if main" value="if __name__ == '__main__':&#10;    from libs.vzmi.dynamically_typed_mlx.runtime_information.SourceCodeInterpreter.Base._components.CommandlineArgument.io_op.to_FunctionArguments._alias.do_and_run import do_CommandlineArgument_to_FunctionArguments_and_run&#10;    do_CommandlineArgument_to_FunctionArguments_and_run($main_preprocess___train_test___for__filtered_data$)" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
     <variable name="main_preprocess___train_test___for__filtered_data" expression="" defaultValue="&quot;test&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -685,7 +685,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="log" value="from vzmi.mlx.software_engineering.BehaviorViewer.Logger.log_op import Logger_log&#10;Logger_log('$condition_message$', $m1$, '$result_message$', $m2$)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="log" value="from libs.vzmi.mlx.software_engineering.BehaviorViewer.Logger.log_op import Logger_log&#10;Logger_log('$condition_message$', $m1$, '$result_message$', $m2$)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="m1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="m2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition_message" expression="" defaultValue="&quot;done with: &quot;" alwaysStopAt="true" />
