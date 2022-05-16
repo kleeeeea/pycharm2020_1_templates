@@ -63,4 +63,35 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="mpl" value="MatplotlibFigure_to_LocalFile(path=title)" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+      <option name="Python_Class" value="false" />
+    </context>
+  </template>
+  <template name="regex non capturing group" value="?:" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="BIBTEX" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="LATEX" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="&lt;abbreviation&gt;" value="from libs.vzmi.mlx.distributed_common.Variable.GenericContainer.Base._backends.SparkSession._bundle import get_or_create_SparkSession&#10;    spark = get_or_create_SparkSession()" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python_Top_Level" value="true" />
+    </context>
+  </template>
 </templateSet>

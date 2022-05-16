@@ -261,7 +261,8 @@
       <option name="SHELL_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="if_variable_exists" value="if [[ -z &quot;IS_FOR_SCRIPTIZATION&quot; ]]&#10;then&#10;fi" description="" toReformat="true" toShortenFQNames="true">
+  <template name="if_variable_exists" value="if [[ -z &quot;$variable$&quot; ]]&#10;then&#10;fi" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="SHELL_SCRIPT" value="true" />
     </context>
@@ -651,6 +652,14 @@
     <variable name="variable" expression="" defaultValue="&quot;v&quot;" alwaysStopAt="true" />
     <context>
       <option name="SHELL_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="replace" value="$(sed 's!$old$!$new$!' &lt;&lt;&lt;&quot;$$$variable_name$&quot;)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="variable_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="old" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="new" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="true" />
     </context>
   </template>
 </templateSet>
