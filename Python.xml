@@ -1006,9 +1006,8 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="try import" value="try:&#10;    from $stmt$ import $obj$&#10;except ImportError as e:&#10;    $obj$ = object&#10;    " description="" toReformat="true" toShortenFQNames="true">
+  <template name="try import" value="try:&#10;    $stmt$&#10;except ImportError:&#10;    pass&#10;    " description="" toReformat="true" toShortenFQNames="true">
     <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
