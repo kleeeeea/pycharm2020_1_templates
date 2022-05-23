@@ -740,7 +740,7 @@
       <option name="Bash" value="true" />
     </context>
   </template>
-  <template name="try from import excetp importerror" value="try:&#10;    from $stmt$ import $obj$&#10;except ImportError as e:&#10;    $obj$ = object&#10;    print(&quot;********************************************************************************&quot;)&#10;    print(e)&#10;    print(&quot;at:&quot;)&#10;    print(&quot;$cc$&quot;)&#10;    print(&quot;********************************************************&quot;)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="try from import excetp importerror log" value="try:&#10;    from $stmt$ import $obj$&#10;except ImportError as e:&#10;    $obj$ = object&#10;    print(&quot;********************************************************************************&quot;)&#10;    print(e)&#10;    print(&quot;at:&quot;)&#10;    print(&quot;$cc$&quot;)&#10;    print(&quot;********************************************************&quot;)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="cc" expression="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" defaultValue="" alwaysStopAt="true" />
@@ -1002,6 +1002,13 @@
   </template>
   <template name="str repr" value="def __str__(self):&#10;    return f'$x$'&#10;&#10;def __repr__(self):&#10;    return self.__str__()" description="" toReformat="true" toShortenFQNames="true">
     <variable name="x" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="try import" value="try:&#10;    from $stmt$ import $obj$&#10;except ImportError as e:&#10;    $obj$ = object&#10;    " description="" toReformat="true" toShortenFQNames="true">
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="obj" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
