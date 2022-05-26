@@ -94,4 +94,9 @@
       <option name="Python_Top_Level" value="true" />
     </context>
   </template>
+  <template name="started" value="started" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
 </templateSet>
