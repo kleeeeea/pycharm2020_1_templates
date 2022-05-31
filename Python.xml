@@ -1012,4 +1012,11 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="tqdm" value="tqdm($xx$, desc=&quot;$cc$&quot;)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="xx" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cc" expression="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
