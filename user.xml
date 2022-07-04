@@ -99,4 +99,12 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="read zip" value="import zipfile&#10;with zipfile.ZipFile(&quot;$zip$.zip&quot;) as z:&#10;   with z.open(&quot;$inner$&quot;) as f:&#10;      $stmt$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="zip" expression="" defaultValue="&quot;archive&quot;" alwaysStopAt="true" />
+    <variable name="inner" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="stmt" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python_Top_Level" value="true" />
+    </context>
+  </template>
 </templateSet>
