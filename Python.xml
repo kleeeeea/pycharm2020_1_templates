@@ -780,7 +780,7 @@
       <option name="Python_Class" value="false" />
     </context>
   </template>
-  <template name="a" value="print(&quot;-----------------------------------------------------------------&quot;)&#10;r = $result$&#10;assert r $condition$&#10;print(f'$result$ evaluates to:\n'&#10;      f'{r}\n'&#10;      '^^^passed assertion of  ($result$ $condition$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print('Tests passed!')&#10;print(&quot;-----------------------------------------------------------------&quot;)&#10;   " description="" toReformat="true" toShortenFQNames="true">
+  <template name="a" value="print(&quot;-----------------------------------------------------------------&quot;)&#10;r = $result$&#10;assert r $condition$&#10;print('$result$ evaluates to:\n'&#10;      f'{r}\n'&#10;      '^^^passed assertion of  ($result$ $condition$)^^^')&#10;print(&quot;at:&quot;)&#10;print(&quot;$cc$&quot;)&#10;print('Tests passed!')&#10;print(&quot;-----------------------------------------------------------------&quot;)&#10;   " description="" toReformat="true" toShortenFQNames="true">
     <variable name="result" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="condition" expression="" defaultValue="&quot;is not None&quot;" alwaysStopAt="true" />
     <variable name="cc" expression="concat(fileRelativePath(), &quot;:&quot;, lineNumber())" defaultValue="" alwaysStopAt="true" />
